@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T05:51:41.663Z",
+  "generatedAt": "2026-10-17T06:01:38.055Z",
   "directoryAsOf": "2026-10-06",
   "sources": [
     {
@@ -28,24 +28,24 @@
     }
   ],
   "totals": {
-    "records": 32748,
-    "universityScope": 25290,
-    "educationScope": 7458,
-    "sourceChecked": 2,
-    "programs": 3,
-    "feeFacts": 5,
-    "deadlineFacts": 3,
-    "recognitionFacts": 1,
+    "records": 32210,
+    "universityScope": 24825,
+    "educationScope": 7385,
+    "sourceChecked": 3,
+    "programs": 4,
+    "feeFacts": 7,
+    "deadlineFacts": 4,
+    "recognitionFacts": 2,
     "countries": 224,
     "universityCountries": 223,
     "cities": 8734,
     "recordsWithCity": 30174,
-    "withDomains": 21451,
-    "curatedFacts": 28,
-    "officialSourcePages": 10,
-    "officialSourceDomains": 3,
-    "recordsWithRecognition": 1,
-    "recordsWithFeeFacts": 2
+    "withDomains": 21433,
+    "curatedFacts": 42,
+    "officialSourcePages": 15,
+    "officialSourceDomains": 4,
+    "recordsWithRecognition": 2,
+    "recordsWithFeeFacts": 3
   },
   "countries": [
     {
@@ -68,16 +68,16 @@
       "code": "AL",
       "name": "Albania",
       "region": "Europe",
-      "records": 40,
-      "universityRecords": 37,
+      "records": 38,
+      "universityRecords": 35,
       "sourceChecked": 0
     },
     {
       "code": "DZ",
       "name": "Algeria",
       "region": "Africa",
-      "records": 129,
-      "universityRecords": 74,
+      "records": 128,
+      "universityRecords": 73,
       "sourceChecked": 0
     },
     {
@@ -124,16 +124,16 @@
       "code": "AR",
       "name": "Argentina",
       "region": "Americas",
-      "records": 195,
-      "universityRecords": 141,
+      "records": 193,
+      "universityRecords": 139,
       "sourceChecked": 0
     },
     {
       "code": "AM",
       "name": "Armenia",
       "region": "Asia",
-      "records": 28,
-      "universityRecords": 26,
+      "records": 26,
+      "universityRecords": 24,
       "sourceChecked": 0
     },
     {
@@ -156,16 +156,16 @@
       "code": "AT",
       "name": "Austria",
       "region": "Europe",
-      "records": 118,
-      "universityRecords": 90,
+      "records": 116,
+      "universityRecords": 89,
       "sourceChecked": 0
     },
     {
       "code": "AZ",
       "name": "Azerbaijan",
       "region": "Asia",
-      "records": 63,
-      "universityRecords": 49,
+      "records": 59,
+      "universityRecords": 47,
       "sourceChecked": 0
     },
     {
@@ -180,16 +180,16 @@
       "code": "BH",
       "name": "Bahrain",
       "region": "Asia",
-      "records": 20,
-      "universityRecords": 20,
+      "records": 18,
+      "universityRecords": 18,
       "sourceChecked": 0
     },
     {
       "code": "BD",
       "name": "Bangladesh",
       "region": "Asia",
-      "records": 224,
-      "universityRecords": 199,
+      "records": 221,
+      "universityRecords": 196,
       "sourceChecked": 0
     },
     {
@@ -204,7 +204,7 @@
       "code": "BY",
       "name": "Belarus",
       "region": "Europe",
-      "records": 62,
+      "records": 61,
       "universityRecords": 49,
       "sourceChecked": 0
     },
@@ -212,16 +212,16 @@
       "code": "BE",
       "name": "Belgium",
       "region": "Europe",
-      "records": 117,
-      "universityRecords": 64,
+      "records": 115,
+      "universityRecords": 63,
       "sourceChecked": 0
     },
     {
       "code": "BZ",
       "name": "Belize",
       "region": "Americas",
-      "records": 7,
-      "universityRecords": 7,
+      "records": 6,
+      "universityRecords": 6,
       "sourceChecked": 0
     },
     {
@@ -284,8 +284,8 @@
       "code": "BR",
       "name": "Brazil",
       "region": "Americas",
-      "records": 617,
-      "universityRecords": 417,
+      "records": 615,
+      "universityRecords": 416,
       "sourceChecked": 0
     },
     {
@@ -308,8 +308,8 @@
       "code": "BG",
       "name": "Bulgaria",
       "region": "Europe",
-      "records": 68,
-      "universityRecords": 54,
+      "records": 64,
+      "universityRecords": 51,
       "sourceChecked": 0
     },
     {
@@ -340,24 +340,24 @@
       "code": "KH",
       "name": "Cambodia",
       "region": "Asia",
-      "records": 66,
-      "universityRecords": 56,
+      "records": 63,
+      "universityRecords": 53,
       "sourceChecked": 0
     },
     {
       "code": "CM",
       "name": "Cameroon",
       "region": "Africa",
-      "records": 53,
-      "universityRecords": 37,
+      "records": 52,
+      "universityRecords": 36,
       "sourceChecked": 0
     },
     {
       "code": "CA",
       "name": "Canada",
       "region": "Americas",
-      "records": 439,
-      "universityRecords": 306,
+      "records": 435,
+      "universityRecords": 302,
       "sourceChecked": 1
     },
     {
@@ -388,24 +388,24 @@
       "code": "CL",
       "name": "Chile",
       "region": "Americas",
-      "records": 113,
-      "universityRecords": 82,
+      "records": 108,
+      "universityRecords": 77,
       "sourceChecked": 0
     },
     {
       "code": "CN",
       "name": "China",
       "region": "Asia",
-      "records": 3349,
-      "universityRecords": 3231,
+      "records": 3340,
+      "universityRecords": 3222,
       "sourceChecked": 0
     },
     {
       "code": "CO",
       "name": "Colombia",
       "region": "Americas",
-      "records": 244,
-      "universityRecords": 194,
+      "records": 235,
+      "universityRecords": 187,
       "sourceChecked": 0
     },
     {
@@ -428,16 +428,16 @@
       "code": "CR",
       "name": "Costa Rica",
       "region": "Americas",
-      "records": 64,
-      "universityRecords": 58,
+      "records": 60,
+      "universityRecords": 54,
       "sourceChecked": 0
     },
     {
       "code": "HR",
       "name": "Croatia",
       "region": "Europe",
-      "records": 63,
-      "universityRecords": 43,
+      "records": 62,
+      "universityRecords": 42,
       "sourceChecked": 0
     },
     {
@@ -468,15 +468,15 @@
       "code": "CZ",
       "name": "Czechia",
       "region": "Europe",
-      "records": 115,
-      "universityRecords": 66,
+      "records": 114,
+      "universityRecords": 65,
       "sourceChecked": 0
     },
     {
       "code": "DK",
       "name": "Denmark",
       "region": "Europe",
-      "records": 78,
+      "records": 77,
       "universityRecords": 46,
       "sourceChecked": 0
     },
@@ -500,8 +500,8 @@
       "code": "DO",
       "name": "Dominican Republic",
       "region": "Americas",
-      "records": 41,
-      "universityRecords": 39,
+      "records": 38,
+      "universityRecords": 36,
       "sourceChecked": 0
     },
     {
@@ -516,24 +516,24 @@
       "code": "EC",
       "name": "Ecuador",
       "region": "Americas",
-      "records": 117,
-      "universityRecords": 108,
+      "records": 114,
+      "universityRecords": 105,
       "sourceChecked": 0
     },
     {
       "code": "EG",
       "name": "Egypt",
       "region": "Africa",
-      "records": 130,
-      "universityRecords": 89,
+      "records": 128,
+      "universityRecords": 87,
       "sourceChecked": 0
     },
     {
       "code": "SV",
       "name": "El Salvador",
       "region": "Americas",
-      "records": 31,
-      "universityRecords": 27,
+      "records": 29,
+      "universityRecords": 25,
       "sourceChecked": 0
     },
     {
@@ -604,8 +604,8 @@
       "code": "FR",
       "name": "France",
       "region": "Europe",
-      "records": 650,
-      "universityRecords": 357,
+      "records": 641,
+      "universityRecords": 354,
       "sourceChecked": 0
     },
     {
@@ -636,24 +636,24 @@
       "code": "GE",
       "name": "Georgia",
       "region": "Asia",
-      "records": 73,
-      "universityRecords": 63,
+      "records": 72,
+      "universityRecords": 62,
       "sourceChecked": 0
     },
     {
       "code": "DE",
       "name": "Germany",
       "region": "Europe",
-      "records": 761,
-      "universityRecords": 583,
+      "records": 747,
+      "universityRecords": 570,
       "sourceChecked": 0
     },
     {
       "code": "GH",
       "name": "Ghana",
       "region": "Africa",
-      "records": 133,
-      "universityRecords": 123,
+      "records": 132,
+      "universityRecords": 122,
       "sourceChecked": 0
     },
     {
@@ -668,8 +668,8 @@
       "code": "GR",
       "name": "Greece",
       "region": "Europe",
-      "records": 72,
-      "universityRecords": 44,
+      "records": 70,
+      "universityRecords": 43,
       "sourceChecked": 0
     },
     {
@@ -716,8 +716,8 @@
       "code": "GN",
       "name": "Guinea",
       "region": "Africa",
-      "records": 15,
-      "universityRecords": 9,
+      "records": 13,
+      "universityRecords": 7,
       "sourceChecked": 0
     },
     {
@@ -764,8 +764,8 @@
       "code": "HK",
       "name": "Hong Kong",
       "region": "Asia",
-      "records": 30,
-      "universityRecords": 26,
+      "records": 29,
+      "universityRecords": 25,
       "sourceChecked": 0
     },
     {
@@ -788,32 +788,32 @@
       "code": "IN",
       "name": "India",
       "region": "Asia",
-      "records": 2402,
-      "universityRecords": 1794,
+      "records": 2385,
+      "universityRecords": 1783,
       "sourceChecked": 0
     },
     {
       "code": "ID",
       "name": "Indonesia",
       "region": "Asia",
-      "records": 2237,
-      "universityRecords": 1211,
+      "records": 2232,
+      "universityRecords": 1206,
       "sourceChecked": 0
     },
     {
       "code": "IR",
       "name": "Iran",
       "region": "Asia",
-      "records": 427,
-      "universityRecords": 400,
+      "records": 407,
+      "universityRecords": 381,
       "sourceChecked": 0
     },
     {
       "code": "IQ",
       "name": "Iraq",
       "region": "Asia",
-      "records": 141,
-      "universityRecords": 135,
+      "records": 140,
+      "universityRecords": 134,
       "sourceChecked": 0
     },
     {
@@ -828,16 +828,16 @@
       "code": "IL",
       "name": "Israel",
       "region": "Asia",
-      "records": 73,
-      "universityRecords": 59,
+      "records": 71,
+      "universityRecords": 57,
       "sourceChecked": 0
     },
     {
       "code": "IT",
       "name": "Italy",
       "region": "Europe",
-      "records": 281,
-      "universityRecords": 199,
+      "records": 278,
+      "universityRecords": 196,
       "sourceChecked": 0
     },
     {
@@ -860,32 +860,32 @@
       "code": "JP",
       "name": "Japan",
       "region": "Asia",
-      "records": 1759,
-      "universityRecords": 1400,
+      "records": 1705,
+      "universityRecords": 1346,
       "sourceChecked": 0
     },
     {
       "code": "JO",
       "name": "Jordan",
       "region": "Asia",
-      "records": 40,
-      "universityRecords": 40,
+      "records": 38,
+      "universityRecords": 38,
       "sourceChecked": 0
     },
     {
       "code": "KZ",
       "name": "Kazakhstan",
       "region": "Asia",
-      "records": 115,
-      "universityRecords": 97,
+      "records": 112,
+      "universityRecords": 94,
       "sourceChecked": 0
     },
     {
       "code": "KE",
       "name": "Kenya",
       "region": "Africa",
-      "records": 97,
-      "universityRecords": 86,
+      "records": 94,
+      "universityRecords": 83,
       "sourceChecked": 0
     },
     {
@@ -900,16 +900,16 @@
       "code": "KW",
       "name": "Kuwait",
       "region": "Asia",
-      "records": 19,
-      "universityRecords": 16,
+      "records": 18,
+      "universityRecords": 15,
       "sourceChecked": 0
     },
     {
       "code": "KG",
       "name": "Kyrgyzstan",
       "region": "Asia",
-      "records": 43,
-      "universityRecords": 34,
+      "records": 40,
+      "universityRecords": 31,
       "sourceChecked": 0
     },
     {
@@ -924,16 +924,16 @@
       "code": "LV",
       "name": "Latvia",
       "region": "Europe",
-      "records": 56,
-      "universityRecords": 44,
+      "records": 52,
+      "universityRecords": 41,
       "sourceChecked": 0
     },
     {
       "code": "LB",
       "name": "Lebanon",
       "region": "Asia",
-      "records": 45,
-      "universityRecords": 44,
+      "records": 43,
+      "universityRecords": 42,
       "sourceChecked": 0
     },
     {
@@ -964,7 +964,7 @@
       "code": "LI",
       "name": "Liechtenstein",
       "region": "Europe",
-      "records": 4,
+      "records": 3,
       "universityRecords": 3,
       "sourceChecked": 0
     },
@@ -1004,16 +1004,16 @@
       "code": "MW",
       "name": "Malawi",
       "region": "Africa",
-      "records": 17,
-      "universityRecords": 16,
+      "records": 16,
+      "universityRecords": 15,
       "sourceChecked": 0
     },
     {
       "code": "MY",
       "name": "Malaysia",
       "region": "Asia",
-      "records": 730,
-      "universityRecords": 509,
+      "records": 722,
+      "universityRecords": 504,
       "sourceChecked": 0
     },
     {
@@ -1060,8 +1060,8 @@
       "code": "MU",
       "name": "Mauritius",
       "region": "Africa",
-      "records": 7,
-      "universityRecords": 5,
+      "records": 6,
+      "universityRecords": 4,
       "sourceChecked": 0
     },
     {
@@ -1076,8 +1076,8 @@
       "code": "MX",
       "name": "Mexico",
       "region": "Americas",
-      "records": 744,
-      "universityRecords": 665,
+      "records": 741,
+      "universityRecords": 662,
       "sourceChecked": 0
     },
     {
@@ -1092,8 +1092,8 @@
       "code": "MD",
       "name": "Moldova",
       "region": "Europe",
-      "records": 29,
-      "universityRecords": 23,
+      "records": 25,
+      "universityRecords": 19,
       "sourceChecked": 0
     },
     {
@@ -1108,8 +1108,8 @@
       "code": "MN",
       "name": "Mongolia",
       "region": "Asia",
-      "records": 33,
-      "universityRecords": 29,
+      "records": 32,
+      "universityRecords": 28,
       "sourceChecked": 0
     },
     {
@@ -1132,16 +1132,16 @@
       "code": "MA",
       "name": "Morocco",
       "region": "Africa",
-      "records": 122,
-      "universityRecords": 47,
+      "records": 118,
+      "universityRecords": 46,
       "sourceChecked": 0
     },
     {
       "code": "MZ",
       "name": "Mozambique",
       "region": "Africa",
-      "records": 28,
-      "universityRecords": 27,
+      "records": 27,
+      "universityRecords": 26,
       "sourceChecked": 0
     },
     {
@@ -1188,8 +1188,8 @@
       "code": "NI",
       "name": "Nicaragua",
       "region": "Americas",
-      "records": 52,
-      "universityRecords": 51,
+      "records": 46,
+      "universityRecords": 45,
       "sourceChecked": 0
     },
     {
@@ -1204,8 +1204,8 @@
       "code": "NG",
       "name": "Nigeria",
       "region": "Africa",
-      "records": 352,
-      "universityRecords": 334,
+      "records": 349,
+      "universityRecords": 331,
       "sourceChecked": 0
     },
     {
@@ -1228,8 +1228,8 @@
       "code": "MK",
       "name": "North Macedonia",
       "region": "Europe",
-      "records": 24,
-      "universityRecords": 19,
+      "records": 23,
+      "universityRecords": 18,
       "sourceChecked": 0
     },
     {
@@ -1244,8 +1244,8 @@
       "code": "NO",
       "name": "Norway",
       "region": "Europe",
-      "records": 80,
-      "universityRecords": 49,
+      "records": 78,
+      "universityRecords": 48,
       "sourceChecked": 0
     },
     {
@@ -1260,8 +1260,8 @@
       "code": "PK",
       "name": "Pakistan",
       "region": "Asia",
-      "records": 317,
-      "universityRecords": 285,
+      "records": 303,
+      "universityRecords": 275,
       "sourceChecked": 0
     },
     {
@@ -1300,48 +1300,48 @@
       "code": "PY",
       "name": "Paraguay",
       "region": "Americas",
-      "records": 41,
-      "universityRecords": 37,
+      "records": 40,
+      "universityRecords": 36,
       "sourceChecked": 0
     },
     {
       "code": "PE",
       "name": "Peru",
       "region": "Americas",
-      "records": 142,
-      "universityRecords": 127,
+      "records": 137,
+      "universityRecords": 122,
       "sourceChecked": 0
     },
     {
       "code": "PH",
       "name": "Philippines",
       "region": "Asia",
-      "records": 894,
-      "universityRecords": 705,
+      "records": 892,
+      "universityRecords": 704,
       "sourceChecked": 0
     },
     {
       "code": "PL",
       "name": "Poland",
       "region": "Europe",
-      "records": 416,
-      "universityRecords": 280,
+      "records": 405,
+      "universityRecords": 276,
       "sourceChecked": 0
     },
     {
       "code": "PT",
       "name": "Portugal",
       "region": "Europe",
-      "records": 433,
-      "universityRecords": 249,
+      "records": 429,
+      "universityRecords": 246,
       "sourceChecked": 0
     },
     {
       "code": "PR",
       "name": "Puerto Rico",
       "region": "Americas",
-      "records": 50,
-      "universityRecords": 47,
+      "records": 46,
+      "universityRecords": 43,
       "sourceChecked": 0
     },
     {
@@ -1364,32 +1364,32 @@
       "code": "RO",
       "name": "Romania",
       "region": "Europe",
-      "records": 137,
-      "universityRecords": 112,
+      "records": 129,
+      "universityRecords": 104,
       "sourceChecked": 0
     },
     {
       "code": "RU",
       "name": "Russia",
       "region": "Europe",
-      "records": 982,
-      "universityRecords": 626,
+      "records": 956,
+      "universityRecords": 609,
       "sourceChecked": 0
     },
     {
       "code": "RW",
       "name": "Rwanda",
       "region": "Africa",
-      "records": 30,
-      "universityRecords": 25,
+      "records": 29,
+      "universityRecords": 24,
       "sourceChecked": 0
     },
     {
       "code": "LC",
       "name": "Saint Lucia",
       "region": "Americas",
-      "records": 6,
-      "universityRecords": 6,
+      "records": 5,
+      "universityRecords": 5,
       "sourceChecked": 0
     },
     {
@@ -1404,8 +1404,8 @@
       "code": "SM",
       "name": "San Marino",
       "region": "Europe",
-      "records": 2,
-      "universityRecords": 2,
+      "records": 1,
+      "universityRecords": 1,
       "sourceChecked": 0
     },
     {
@@ -1420,24 +1420,24 @@
       "code": "SA",
       "name": "Saudi Arabia",
       "region": "Asia",
-      "records": 90,
-      "universityRecords": 86,
+      "records": 89,
+      "universityRecords": 85,
       "sourceChecked": 0
     },
     {
       "code": "SN",
       "name": "Senegal",
       "region": "Africa",
-      "records": 29,
-      "universityRecords": 18,
+      "records": 27,
+      "universityRecords": 16,
       "sourceChecked": 0
     },
     {
       "code": "RS",
       "name": "Serbia",
       "region": "Europe",
-      "records": 52,
-      "universityRecords": 28,
+      "records": 49,
+      "universityRecords": 25,
       "sourceChecked": 0
     },
     {
@@ -1460,8 +1460,8 @@
       "code": "SG",
       "name": "Singapore",
       "region": "Asia",
-      "records": 124,
-      "universityRecords": 54,
+      "records": 122,
+      "universityRecords": 52,
       "sourceChecked": 0
     },
     {
@@ -1476,7 +1476,7 @@
       "code": "SK",
       "name": "Slovakia",
       "region": "Europe",
-      "records": 53,
+      "records": 51,
       "universityRecords": 36,
       "sourceChecked": 0
     },
@@ -1516,8 +1516,8 @@
       "code": "KR",
       "name": "South Korea",
       "region": "Asia",
-      "records": 425,
-      "universityRecords": 393,
+      "records": 421,
+      "universityRecords": 390,
       "sourceChecked": 0
     },
     {
@@ -1532,8 +1532,8 @@
       "code": "ES",
       "name": "Spain",
       "region": "Europe",
-      "records": 239,
-      "universityRecords": 170,
+      "records": 238,
+      "universityRecords": 169,
       "sourceChecked": 0
     },
     {
@@ -1564,16 +1564,16 @@
       "code": "SD",
       "name": "Sudan",
       "region": "Africa",
-      "records": 73,
-      "universityRecords": 68,
+      "records": 68,
+      "universityRecords": 63,
       "sourceChecked": 0
     },
     {
       "code": "SR",
       "name": "Suriname",
       "region": "Americas",
-      "records": 3,
-      "universityRecords": 3,
+      "records": 2,
+      "universityRecords": 2,
       "sourceChecked": 0
     },
     {
@@ -1596,24 +1596,24 @@
       "code": "CH",
       "name": "Switzerland",
       "region": "Europe",
-      "records": 209,
-      "universityRecords": 126,
+      "records": 198,
+      "universityRecords": 120,
       "sourceChecked": 0
     },
     {
       "code": "SY",
       "name": "Syria",
       "region": "Asia",
-      "records": 40,
-      "universityRecords": 36,
+      "records": 39,
+      "universityRecords": 35,
       "sourceChecked": 0
     },
     {
       "code": "TW",
       "name": "Taiwan",
       "region": "Asia",
-      "records": 178,
-      "universityRecords": 168,
+      "records": 176,
+      "universityRecords": 166,
       "sourceChecked": 0
     },
     {
@@ -1636,8 +1636,8 @@
       "code": "TH",
       "name": "Thailand",
       "region": "Asia",
-      "records": 242,
-      "universityRecords": 216,
+      "records": 239,
+      "universityRecords": 213,
       "sourceChecked": 0
     },
     {
@@ -1652,8 +1652,8 @@
       "code": "NL",
       "name": "The Netherlands",
       "region": "Europe",
-      "records": 148,
-      "universityRecords": 93,
+      "records": 147,
+      "universityRecords": 92,
       "sourceChecked": 0
     },
     {
@@ -1684,24 +1684,24 @@
       "code": "TT",
       "name": "Trinidad and Tobago",
       "region": "Americas",
-      "records": 6,
-      "universityRecords": 5,
+      "records": 5,
+      "universityRecords": 4,
       "sourceChecked": 0
     },
     {
       "code": "TN",
       "name": "Tunisia",
       "region": "Africa",
-      "records": 77,
-      "universityRecords": 38,
+      "records": 75,
+      "universityRecords": 36,
       "sourceChecked": 0
     },
     {
       "code": "TR",
       "name": "Türkiye",
       "region": "Asia",
-      "records": 250,
-      "universityRecords": 229,
+      "records": 247,
+      "universityRecords": 227,
       "sourceChecked": 0
     },
     {
@@ -1732,57 +1732,57 @@
       "code": "UG",
       "name": "Uganda",
       "region": "Africa",
-      "records": 62,
-      "universityRecords": 55,
+      "records": 61,
+      "universityRecords": 54,
       "sourceChecked": 0
     },
     {
       "code": "UA",
       "name": "Ukraine",
       "region": "Europe",
-      "records": 345,
-      "universityRecords": 250,
+      "records": 338,
+      "universityRecords": 243,
       "sourceChecked": 0
     },
     {
       "code": "AE",
       "name": "United Arab Emirates",
       "region": "Asia",
-      "records": 77,
-      "universityRecords": 64,
+      "records": 74,
+      "universityRecords": 61,
       "sourceChecked": 0
     },
     {
       "code": "GB",
       "name": "United Kingdom",
       "region": "Europe",
-      "records": 653,
-      "universityRecords": 512,
+      "records": 648,
+      "universityRecords": 510,
       "sourceChecked": 1
     },
     {
       "code": "US",
       "name": "United States",
       "region": "Americas",
-      "records": 4765,
-      "universityRecords": 3669,
+      "records": 4636,
+      "universityRecords": 3542,
       "sourceChecked": 0
     },
     {
       "code": "UY",
       "name": "Uruguay",
       "region": "Americas",
-      "records": 20,
-      "universityRecords": 15,
+      "records": 19,
+      "universityRecords": 14,
       "sourceChecked": 0
     },
     {
       "code": "UZ",
       "name": "Uzbekistan",
       "region": "Asia",
-      "records": 140,
-      "universityRecords": 100,
-      "sourceChecked": 0
+      "records": 137,
+      "universityRecords": 99,
+      "sourceChecked": 1
     },
     {
       "code": "VU",
@@ -1804,8 +1804,8 @@
       "code": "VN",
       "name": "Vietnam",
       "region": "Asia",
-      "records": 276,
-      "universityRecords": 232,
+      "records": 274,
+      "universityRecords": 231,
       "sourceChecked": 0
     },
     {
@@ -1828,28 +1828,29 @@
       "code": "ZM",
       "name": "Zambia",
       "region": "Africa",
-      "records": 31,
-      "universityRecords": 28,
+      "records": 30,
+      "universityRecords": 27,
       "sourceChecked": 0
     },
     {
       "code": "ZW",
       "name": "Zimbabwe",
       "region": "Africa",
-      "records": 27,
-      "universityRecords": 25,
+      "records": 26,
+      "universityRecords": 24,
       "sourceChecked": 0
     }
   ],
   "gaps": [
-    "This is not a complete world register. It contains 32,748 directory records from the sources listed below; other universities and education organisations are certainly missing.",
-    "Source-checked programme, fee, deadline, scholarship and recognition facts exist for 2 of 25,290 university-scope records (under 0.1%). The rest are discovery records only.",
-    "Directory inclusion is not university status, accreditation or degree-granting authority. 7,458 education records are kept in the broader “education” scope because they are neither in the Hipo university directory nor named like a university.",
+    "This is not a complete world register. It contains 32,210 directory records from the sources listed below; other universities and education organisations are certainly missing.",
+    "Source-checked programme, fee, deadline, scholarship and recognition facts exist for 3 of 24,825 university-scope records (under 0.1%). The rest are discovery records only.",
+    "Directory inclusion is not university status, accreditation or degree-granting authority. 7,385 education records are kept in the broader “education” scope because they are neither in the Hipo university directory nor named like a university.",
     "“University scope” combines the community Hipo university directory with a multilingual name heuristic for ROR records. It can include organisations that are not universities and can miss universities with unusual names.",
     "Hipo is a community-maintained directory, not an official register. It may contain non-university institutions and may be out of date. Its entries are labelled as community directory listings.",
+    "A record needs a row in ROR or Hipo. Institutions absent from both are not listed even when they have an official website; for example, Webster University in Tashkent was confirmed to exist during verification but is not in this build.",
     "No currency conversion is applied in this release. Fees are shown in their original currency and cannot be compared across currencies without a dated exchange-rate source.",
-    "Recognition and accreditation are shown only where an official university or authority page was read. Absence of a recognition entry is not evidence that an institution is unaccredited (1 record currently have one or more entries).",
-    "Cities are missing for 2,574 records. No city is inferred from a domain, a postal address or another institution.",
+    "Recognition and accreditation are shown only where an official university or authority page was read. Absence of a recognition entry is not evidence that an institution is unaccredited (2 records currently have one or more entries).",
+    "Cities are missing for 2,036 records. No city is inferred from a domain, a postal address or another institution.",
     "8,734 distinct city strings are recorded; these are source spellings, not a normalised world city list.",
     "Programme catalogues are selective samples of official pages. A missing programme is not a finding that it is not offered, and a listed programme does not guarantee admission.",
     "Former names are included only when a source names them. Local-script and alternate names come from the directory sources and are not complete.",
@@ -1859,7 +1860,7 @@
   ],
   "updateHistory": [
     {
-      "at": "2026-10-17T05:51:41.663Z",
+      "at": "2026-10-17T06:01:38.055Z",
       "sources": [
         {
           "id": "ror",
@@ -1873,13 +1874,13 @@
         }
       ],
       "totals": {
-        "records": 32748,
-        "universityScope": 25290,
-        "sourceChecked": 2,
-        "programs": 3,
-        "feeFacts": 5
+        "records": 32210,
+        "universityScope": 24825,
+        "sourceChecked": 3,
+        "programs": 4,
+        "feeFacts": 7
       },
-      "note": "Directory sources: ROR v2.14-2026-10-06; Hipo sha256:4c8b526235db. 32,748 records, 25,290 university-scope, 2 source-checked profiles."
+      "note": "Directory sources: ROR v2.14-2026-10-06; Hipo sha256:4c8b526235db. 32,210 records, 24,825 university-scope, 3 source-checked profiles."
     }
   ]
 }

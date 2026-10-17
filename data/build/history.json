@@ -1,6 +1,6 @@
 [
   {
-    "at": "2026-10-17T05:51:41.663Z",
+    "at": "2026-10-17T06:01:38.055Z",
     "sources": [
       {
         "id": "ror",
@@ -14,12 +14,12 @@
       }
     ],
     "totals": {
-      "records": 32748,
-      "universityScope": 25290,
-      "sourceChecked": 2,
-      "programs": 3,
-      "feeFacts": 5
+      "records": 32210,
+      "universityScope": 24825,
+      "sourceChecked": 3,
+      "programs": 4,
+      "feeFacts": 7
     },
-    "note": "Directory sources: ROR v2.14-2026-10-06; Hipo sha256:4c8b526235db. 32,748 records, 25,290 university-scope, 2 source-checked profiles."
+    "note": "Directory sources: ROR v2.14-2026-10-06; Hipo sha256:4c8b526235db. 32,210 records, 24,825 university-scope, 3 source-checked profiles."
   }
 ]

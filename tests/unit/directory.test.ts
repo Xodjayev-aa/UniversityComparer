@@ -1,5 +1,11 @@
 import { describe, expect, it } from 'vitest';
-import { buildDirectory, isClearlyNotUniversity, looksLikeUniversity } from '../../scripts/ingest/directory';
+import {
+  buildDirectory,
+  isClearlyNotUniversity,
+  looksLikeUniversity,
+  namesAreSimilar,
+  websiteHost,
+} from '../../scripts/ingest/directory';
 import type { FetchedSource } from '../../scripts/ingest/sources';
 
 const rorFetched: FetchedSource = {
@@ -64,6 +70,74 @@ describe('directory deduplication and scope', () => {
     expect(record?.listing.ror).toBe(true);
     expect(record?.domains).toContain('example.ac.uk');
     expect(record?.listing.basisNote).toMatch(/Neither source is an official university register/);
+  });
+
+  it('merges a Hipo listing when the ROR record has only a website, not domains', () => {
+    const rorWithoutDomains = {
+      ...org('fff666666', 'Turin Polytechnic University', 'GB', 'polito.uz'),
+      domains: [] as string[],
+      links: [{ type: 'website', value: 'https://polito.uz/index.php?lang=en' }],
+    };
+    const result = buildDirectory(
+      [rorWithoutDomains],
+      [
+        {
+          name: 'Turin Polytechnic University In Tashkent',
+          alpha_two_code: 'GB',
+          country: 'United Kingdom',
+          domains: ['polito.uz'],
+          web_pages: [],
+        },
+      ],
+      rorFetched,
+      hipoFetched,
+    );
+    expect(result.records).toHaveLength(1);
+    expect(result.records[0]?.listing.hipo).toBe(true);
+    expect(result.records[0]?.listing.ror).toBe(true);
+    expect(result.records[0]?.domains).toContain('polito.uz');
+  });
+
+  it('ignores generic website hosts and normalises real ones', () => {
+    expect(websiteHost('https://www.example.edu/admissions')).toBe('example.edu');
+    expect(websiteHost('https://www.facebook.com/exampleuniversity')).toBeNull();
+    expect(websiteHost('https://sites.google.com/view/example')).toBeNull();
+    expect(websiteHost(null)).toBeNull();
+  });
+
+  it('compares names conservatively for a website-only match', () => {
+    expect(
+      namesAreSimilar(['Turin Polytechnic University'], 'Turin Polytechnic University In Tashkent'),
+    ).toBe(true);
+    expect(
+      namesAreSimilar(['Business School Ostrava'], 'University of Education Hradec Kralove'),
+    ).toBe(false);
+    expect(namesAreSimilar(['Example University'], 'Example University')).toBe(true);
+  });
+
+  it('does not merge an unrelated institution that shares a website host', () => {
+    const rorBusiness = {
+      ...org('aaa777777', 'Business School Ostrava', 'CZ', 'osu.cz'),
+      domains: [] as string[],
+      links: [{ type: 'website', value: 'https://www.osu.cz/' }],
+    };
+    const result = buildDirectory(
+      [rorBusiness],
+      [
+        {
+          name: 'University of Education Hradec Kralove',
+          alpha_two_code: 'CZ',
+          country: 'Czechia',
+          domains: ['osu.cz'],
+          web_pages: [],
+        },
+      ],
+      rorFetched,
+      hipoFetched,
+    );
+    expect(result.records).toHaveLength(2);
+    const business = result.records.find((record) => record.names.primary === 'Business School Ostrava');
+    expect(business?.listing.hipo).toBe(false);
   });
 
   it('keeps same-named institutions in different countries separate', () => {

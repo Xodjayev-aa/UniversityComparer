@@ -15,7 +15,7 @@ University discovery and comparison with **per-fact provenance** — an installa
 - Correction-report form; optional admin review queue protected by an `ADMIN_TOKEN` (disabled unless configured).
 - Public coverage page generated from the same dataset, listing sources, counts, gaps and update history.
 
-Current build (`npm run ingest`, 2026-10-17): **32,748 directory records** in 224 countries, of which **25,290 are in the university scope** and 7,458 are broader education records. **2 profiles are source-checked** (University of Oxford; University of Toronto Scarborough's Computer Science programme), contributing 28 sourced facts, 3 programmes, 5 fee facts and 3 deadlines. This is intentionally visible in the app and in [docs/COVERAGE.md](docs/COVERAGE.md). Directory breadth is not verification depth.
+Current build (`npm run ingest`, 2026-10-17): **32,210 directory records** in 224 countries, of which **24,825 are in the university scope** and 7,385 are broader education records. **3 profiles are source-checked** (University of Oxford; University of Toronto Scarborough's Computer Science programme; Westminster International University in Tashkent), contributing 42 sourced facts, 4 programmes, 7 fee facts, 4 deadlines and 2 recognition facts. This is intentionally visible in the app and in [docs/COVERAGE.md](docs/COVERAGE.md). Directory breadth is not verification depth.
 
 ## Quick start
 
@@ -124,8 +124,8 @@ Free-tier examples (limits change; verify before deploying): Cloudflare Pages st
 
 ## Limitations and next work
 
-- Verified coverage is very thin: 2 institutions. Adding profiles requires reading official pages and writing research files; it is not automated by scraping.
-- City is missing for 2,574 records and a domain for 11,297 because those sources do not provide them. Nothing is inferred.
+- Verified coverage is very thin: 3 institutions. Adding profiles requires reading official pages and writing research files; it is not automated by scraping.
+- City is missing for 2,036 records and a domain for 10,777 because those sources do not provide them. Nothing is inferred.
 - Directory coverage is not complete and is not an official register. Hipo is community-maintained; ROR includes many organisations that are not universities.
 - No currency conversion, no rankings, no admission/scholarship/visa predictions, no live page monitoring.
 - The subject taxonomy is UniScope's own grouping, not an official or publisher taxonomy.

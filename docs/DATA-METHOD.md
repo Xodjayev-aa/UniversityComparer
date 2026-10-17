@@ -13,12 +13,13 @@ This document explains how a record enters UniScope, what each label means, and 
 
 No source is described as “live”, “verified complete” or “current”. A directory snapshot has a release date; a fact has a read date. Neither proves that the page is unchanged today.
 
-### Why only two source-checked profiles
+### Why only three source-checked profiles
 
-Taking a directory row and inventing tuition or programmes would violate the project's core rule. Verified facts require a person to open the official page, identify the degree level, intake/academic year, applicant category and fee basis, then write a reviewable research file. The 2026-10-17 build contains two such profiles as a working demonstration of that pipeline:
+Taking a directory row and inventing tuition or programmes would violate the project's core rule. Verified facts require a person to open the official page, identify the degree level, intake/academic year, applicant category and fee basis, then write a reviewable research file. The 2026-10-17 build contains three such profiles as a working demonstration of that pipeline:
 
 - **University of Oxford** — 2027-entry undergraduate course-fee range, home fee, two programmes, UCAS deadline, entry requirements, two scholarships, OfS registration.
 - **University of Toronto (Scarborough campus)** — Bachelor of Computer Science, Fall 2027 application/document deadlines for domestic and international applicants, 2026–27 fee estimates for three applicant categories, campus-specific notes.
+- **Westminster International University in Tashkent (Uzbekistan)** — BSc (Hons) in Computer Science with 2026/27 entry requirements, domestic and international undergraduate tuition in UZS, the 2026/27 programme-level accreditation statement, and the 17 August 2026 undergraduate deadline, each labelled with its academic year, applicant category and source.
 
 The app states this ratio on the home, search, profile and coverage pages rather than hiding it.
 
@@ -29,7 +30,8 @@ The app states this ratio on the home, search, profile and coverage pages rather
 3. **Normalise** names, domains (lowercase, strip `www`, scheme, port, path), country codes and coordinates.
 4. **Deduplicate** in this order:
    - same canonical domain **and** same country code;
-   - otherwise same folded primary name **and** same country code, but only when the name match is unique.
+   - otherwise same folded primary name **and** same country code, but only when the name match is unique;
+   - otherwise a listing may join a ROR record through the website host only when that host is not generic (for example not `sites.google.com` or a social network), exactly one candidate in the same country shares the host, and the two names are similar. Website hosts are frequently shared by unrelated organisations, faculties and branches, so the host is a supporting signal — never a match on its own.
    - Hipo-only records receive a deterministic id derived from name, country and first domain, so repeated ingests are stable.
    - Same-named institutions in different countries are kept separate. Campuses are not invented; a campus is added only from an official page that names it.
 5. **Assign scope**:

@@ -305,6 +305,106 @@ function buildNameIndex(records: Institution[]): Map<string, Institution[]> {
   return index;
 }
 
+const GENERIC_WEBSITE_HOSTS = new Set([
+  'facebook.com',
+  'linkedin.com',
+  'twitter.com',
+  'x.com',
+  'instagram.com',
+  'youtube.com',
+  'google.com',
+  'sites.google.com',
+  'wordpress.com',
+  'wixsite.com',
+  'blogspot.com',
+  'webnode.com',
+  'weebly.com',
+  'jimdo.com',
+  'medium.com',
+  't.me',
+  'vk.com',
+  'ok.ru',
+]);
+
+/**
+ * ROR does not always populate `domains`, but it usually has a website link.
+ * A Hipo listing that only carries the domain then becomes a duplicate (this
+ * happened for a Tashkent university pair). Website hosts are therefore used
+ * as a *secondary* match signal, only when the names are similar, so that a
+ * shared host (an umbrella site, a faculty page) cannot merge unrelated
+ * institutions.
+ */
+export function websiteHost(website: string | null): string | null {
+  const host = website ? canonicalDomain(website) : null;
+  if (!host || GENERIC_WEBSITE_HOSTS.has(host)) return null;
+  return host;
+}
+
+const NAME_STOPWORDS = new Set([
+  'university',
+  'universidad',
+  'universite',
+  'universitat',
+  'universiteit',
+  'college',
+  'institute',
+  'institut',
+  'instituto',
+  'school',
+  'faculty',
+  'national',
+  'international',
+  'state',
+  'technical',
+  'technology',
+  'polytechnic',
+  'higher',
+  'education',
+  'named',
+  'after',
+  'branch',
+  'campus',
+  'academy',
+  'of',
+  'the',
+  'and',
+  'for',
+  'in',
+  'at',
+  'de',
+  'del',
+  'la',
+  'el',
+  'du',
+  'des',
+]);
+
+function significantTokens(name: string): Set<string> {
+  return new Set(
+    foldText(name)
+      .split(' ')
+      .filter((token) => token.length >= 4 && !NAME_STOPWORDS.has(token)),
+  );
+}
+
+/** Conservative name comparison for a website-host-only match. */
+export function namesAreSimilar(left: string[], right: string): boolean {
+  const rightFolded = foldText(right);
+  const rightTokens = significantTokens(right);
+  for (const name of left) {
+    const folded = foldText(name);
+    if (!folded) continue;
+    if (folded === rightFolded) return true;
+    if (folded.length >= 8 && rightFolded.length >= 8 && (folded.includes(rightFolded) || rightFolded.includes(folded))) {
+      return true;
+    }
+    for (const token of significantTokens(name)) {
+      if (rightTokens.has(token)) return true;
+    }
+  }
+  return false;
+}
+
 function buildDomainIndex(records: Institution[]): Map<string, Institution[]> {
   const index = new Map<string, Institution[]>();
   for (const record of records) {
@@ -313,6 +413,18 @@ function buildDomainIndex(records: Institution[]): Map<string, Institution[]> {
       list.push(record);
       index.set(domain, list);
     }
+  }
+  return index;
+}
+
+function buildWebsiteIndex(records: Institution[]): Map<string, Institution[]> {
+  const index = new Map<string, Institution[]>();
+  for (const record of records) {
+    const host = websiteHost(record.website);
+    if (!host) continue;
+    const list = index.get(host) ?? [];
+    list.push(record);
+    index.set(host, list);
   }
   return index;
 }
@@ -433,6 +545,16 @@ function mapRegionForCountry(
   countryMap: Map<string, { name: string; region: Region }>,
 ): Region {
   return countryMap.get(countryCode)?.region ?? 'Other';
+}
+
+function candidateNames(record: Institution): string[] {
+  return [
+    record.names.primary,
+    ...(record.names.official ? [record.names.official] : []),
+    ...record.names.aliases,
+    ...record.names.localNames.map((local) => local.value),
+    ...record.names.formerNames,
+  ];
 }
 
 function createHipoRecord(
@@ -566,6 +688,7 @@ export function buildDirectory(
   }
 
   const byDomain: Map<string, Institution[]> = buildDomainIndex(rorRecords);
+  const byWebsite: Map<string, Institution[]> = buildWebsiteIndex(rorRecords);
   const byName: Map<string, Institution[]> = buildNameIndex(rorRecords);
   const hipoById = new Map<string, Institution>();
   const hipoByName = new Map<string, Institution>();
@@ -601,6 +724,20 @@ export function buildDirectory(
         ),
       );
       if (nameMatches.length === 1) target = nameMatches[0] ?? null;
+    }
+    if (!target) {
+      // Only one candidate may share the host, and the names must be similar.
+      // This avoids merging, say, a business school into an unrelated
+      // university that happens to host several institutions on one domain.
+      for (const domain of domains) {
+        const candidates = (byWebsite.get(domain) ?? []).filter(
+          (candidate) => candidate.country.code === code,
+        );
+        if (candidates.length === 1 && candidates[0] && namesAreSimilar(candidateNames(candidates[0]), name)) {
+          target = candidates[0];
+          break;
+        }
+      }
     }
     if (!target) {
       const nameMatches = byName.get(nameIndexKey(name, code)) ?? [];

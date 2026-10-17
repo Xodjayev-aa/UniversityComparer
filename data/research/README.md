@@ -103,3 +103,4 @@ The example above is illustrative, not real data. Do not copy its numbers.
 
 - `oxford.json` — institution-wide fee range, programmes, deadline, recognition, scholarships.
 - `toronto.json` — campus-specific programme, first-year fee estimates for three applicant categories, domestic/international deadlines, explicit “not every campus” note.
+- `wiut.json` — non-English-currency fees (UZS) for domestic and international applicants, a 2026/27 programme with entry requirements, programme-level accreditation wording and a deadline that has already passed.
