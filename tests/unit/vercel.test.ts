@@ -9,8 +9,16 @@ describe('Vercel rewrite handling', () => {
   });
 
   it('matches the rewrite used by vercel.json for nested API paths', () => {
-    expect(originalUrlFromRewrite('/api/index?__path=/institutions/ror-abc')).toBe('/institutions/ror-abc');
-    expect(originalUrlFromRewrite('/api/index?__path=/admin/reports&__path')).toBe('/admin/reports');
+    expect(originalUrlFromRewrite('/api/index?__path=/api/institutions/ror-abc')).toBe(
+      '/api/institutions/ror-abc',
+    );
+    expect(originalUrlFromRewrite('/api/index?__path=/api/admin/reports&__path')).toBe('/api/admin/reports');
+  });
+
+  it('keeps the /api prefix that the rewrite destination carries', () => {
+    expect(originalUrlFromRewrite('/api/index?__path=/api/health&deploy=cbd7570')).toBe(
+      '/api/health?deploy=cbd7570',
+    );
   });
 
   it('is a no-op when the runtime already passes the original URL', () => {
