@@ -332,15 +332,22 @@ function applyResearch(record: Institution, research: ResearchFileInput, key: st
     return expanded;
   });
 
-  const localNames = [
-    ...record.names.localNames.filter((name) => name.source !== 'official'),
-    ...(research.names.localNames ?? []).map((name) => ({
+  // A local name may arrive from ROR and the official page. Keep one entry per
+  // folded value, preferring the official source without inventing new spellings.
+  const localNameByValue = new Map<string, Institution['names']['localNames'][number]>();
+  for (const name of record.names.localNames) {
+    if (name.source === 'official') continue;
+    localNameByValue.set(foldText(name.value), name);
+  }
+  for (const name of research.names.localNames ?? []) {
+    localNameByValue.set(foldText(name.value), {
       lang: name.lang,
       value: name.value,
       source: 'official' as const,
       type: name.type,
-    })),
-  ];
+    });
+  }
+  const localNames = [...localNameByValue.values()];
   const aliases = [
     ...record.names.aliases,
     ...(research.names.aliases ?? []),
@@ -398,7 +405,10 @@ function applyResearch(record: Institution, research: ResearchFileInput, key: st
       curatedNote,
       ...(record.scope === 'education' ? ['This record was previously in the broader education scope and is now presented as a university because an official page was checked.'] : []),
       ...research.dataNotes,
-      ...record.dataNotes.filter((note) => note.startsWith('No city is recorded')),
+      ...record.dataNotes.filter(
+        (note) =>
+          note.startsWith('No city is recorded') || note.startsWith('This institution is not present in the directory'),
+      ),
     ],
   };
 

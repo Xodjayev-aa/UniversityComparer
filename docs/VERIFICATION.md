@@ -7,7 +7,7 @@ Last updated: **2026-10-17**. This file records what was actually executed, what
 | Check | Command | Result |
 | --- | --- | --- |
 | TypeScript (strict, whole repo) | `npx tsc --noEmit` | Passed, no diagnostics |
-| Unit + API tests (mocked, no outbound network) | `npm test` | **79 passed / 79**, 11 files |
+| Unit + API tests (mocked, no outbound network) | `npm test` | **88 passed / 88**, 12 files |
 | Dataset validation (schema, duplicate ids, references, future read dates) | `npm run validate:data` | Passed: 32,748 records; 2 source-checked; 3 programmes; 5 fee facts |
 | Production client build + PWA generation | `npm run build` | Passed: 26 precache entries; `manifest.webmanifest` and `sw.js` generated |
 | Production server smoke test | `PORT=3123 NODE_ENV=production npx tsx server/index.ts` | `/api/health` 200; SPA deep link 200; manifest and SW served |

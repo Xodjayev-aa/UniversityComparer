@@ -2,7 +2,7 @@
 
 > Generated from the current dataset. Counts describe this build only; they are not a claim of completeness.
 
-- Generated: 2026-10-17T05:49:02.159Z
+- Generated: 2026-10-17T05:51:41.663Z
 - Directory data as of: 2026-10-06
 - Records: 32,748
 - University-scope records: 25,290
@@ -285,7 +285,7 @@
 
 ## Update history
 
-### 2026-10-17T05:49:02.159Z
+### 2026-10-17T05:51:41.663Z
 
 Directory sources: ROR v2.14-2026-10-06; Hipo sha256:4c8b526235db. 32,748 records, 25,290 university-scope, 2 source-checked profiles.
 
