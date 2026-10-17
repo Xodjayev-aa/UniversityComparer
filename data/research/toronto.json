@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 1,
+  "key": "university-of-toronto",
+  "profileSource": "uoft-home",
+  "match": {
+    "rorId": "https://ror.org/03dbr7087",
+    "domains": [
+      "utoronto.ca"
+    ],
+    "name": "University of Toronto",
+    "countryCode": "CA"
+  },
+  "names": {
+    "primary": "University of Toronto",
+    "official": "University of Toronto",
+    "aliases": [
+      "U of T",
+      "UofT"
+    ],
+    "localNames": [
+      {
+        "lang": "fr",
+        "value": "Université de Toronto",
+        "type": "label"
+      }
+    ]
+  },
+  "website": "https://www.utoronto.ca/",
+  "kind": "university",
+  "languages": [],
+  "campuses": [
+    {
+      "id": "camp-uoft-scarborough",
+      "name": "Scarborough campus",
+      "city": "Toronto",
+      "countryCode": "CA",
+      "source": "utsc-cs"
+    }
+  ],
+  "programs": [
+    {
+      "id": "uoft-utsc-cs",
+      "name": "Computer Science (Scarborough)",
+      "degreeLevel": "bachelor",
+      "subjectArea": "computer-science",
+      "language": null,
+      "studyModes": [],
+      "duration": "4 years",
+      "campus": "Scarborough",
+      "admissionsUrl": "https://www.utsc.utoronto.ca/admissions/programs/computer-science",
+      "source": "utsc-cs",
+      "notes": "Degree offered: Bachelor of Computer Science (BCS). Program start: Fall 2027. Co-op option available. OUAC code TXC. Direct from high school only; applicants with any post-secondary education are not eligible.",
+      "tuition": [
+        {
+          "label": "Computer Science first-year fee — Ontario residents",
+          "amount": {
+            "kind": "exact",
+            "min": 6100,
+            "max": 6100,
+            "currency": "CAD"
+          },
+          "unit": "per-year",
+          "coverage": "mandatory-fees-separate",
+          "academicYear": "2026-27",
+          "intake": null,
+          "applicantCategory": "in-state",
+          "studyMode": "full-time",
+          "campus": "Scarborough",
+          "notes": "Published as the current-year (2026–27) first-year fee to help estimate fall 2027; the page says 2027–28 fees will be approved in spring 2027. Year 2 and up: CAD 11,420. Incidental and ancillary fees are additional (CAD 2,286 listed).",
+          "source": "utsc-fees"
+        },
+        {
+          "label": "Computer Science first-year fee — domestic students outside Ontario",
+          "amount": {
+            "kind": "exact",
+            "min": 7610,
+            "max": 7610,
+            "currency": "CAD"
+          },
+          "unit": "per-year",
+          "coverage": "mandatory-fees-separate",
+          "academicYear": "2026-27",
+          "intake": null,
+          "applicantCategory": "out-of-state",
+          "studyMode": "full-time",
+          "campus": "Scarborough",
+          "notes": "Published as the current-year (2026–27) first-year fee to help estimate fall 2027; the page says 2027–28 fees will be approved in spring 2027. Year 2 and up: CAD 14,260. Incidental and ancillary fees are additional (CAD 2,286 listed).",
+          "source": "utsc-fees"
+        },
+        {
+          "label": "Computer Science first-year fee — international students",
+          "amount": {
+            "kind": "exact",
+            "min": 66110,
+            "max": 66110,
+            "currency": "CAD"
+          },
+          "unit": "per-year",
+          "coverage": "mandatory-fees-separate",
+          "academicYear": "2026-27",
+          "intake": null,
+          "applicantCategory": "international",
+          "studyMode": "full-time",
+          "campus": "Scarborough",
+          "notes": "Published as the current-year (2026–27) first-year fee to help estimate fall 2027; the page says 2027–28 fees will be approved in spring 2027. Year 2 and up: CAD 72,480. Incidental and ancillary fees are additional (CAD 2,286 listed).",
+          "source": "utsc-fees"
+        }
+      ],
+      "deadlines": [
+        {
+          "id": "uoft-cs-int-apply",
+          "date": "2027-01-15",
+          "dateText": "15 January 2027",
+          "intake": "Fall 2027",
+          "academicYear": "2027-28",
+          "applicantCategory": "international",
+          "notes": "Application deadline listed in the international-student table. Early application date: 7 November 2026. Document deadline: 1 February 2027. The programme page is campus-specific (Scarborough).",
+          "source": "utsc-cs"
+        },
+        {
+          "id": "uoft-cs-dom-apply",
+          "date": "2027-01-15",
+          "dateText": "15 January 2027",
+          "intake": "Fall 2027",
+          "academicYear": "2027-28",
+          "applicantCategory": "domestic",
+          "notes": "Application deadline listed in the domestic-student table. Early application date: 7 November 2026. Document deadline: 1 February 2027. The programme page is campus-specific (Scarborough).",
+          "source": "utsc-cs"
+        }
+      ]
+    }
+  ],
+  "tuition": [],
+  "scholarships": [],
+  "admissions": {
+    "requirements": [
+      {
+        "text": "Ontario high school: Ontario Secondary School Diploma with at least six Grade 12 U or M courses, including English, Advanced Functions, and Calculus and Vectors. The page lists approximate grade requirements of a minimum 70% in English and low 90s overall (high 90s for co-op).",
+        "degreeLevel": "bachelor",
+        "applicantCategory": "in-state",
+        "academicYear": "2027-28",
+        "intake": "Fall 2027",
+        "source": "utsc-cs"
+      },
+      {
+        "text": "International high school: proof of high school diploma; requirements vary by country and school system. Required Grade 12 courses listed are English, Advanced Functions, and Calculus and Vectors. English-language proficiency proof may be necessary.",
+        "degreeLevel": "bachelor",
+        "applicantCategory": "international",
+        "academicYear": "2027-28",
+        "intake": "Fall 2027",
+        "source": "utsc-cs"
+      }
+    ],
+    "deadlines": [],
+    "links": [
+      {
+        "label": "UTSC admissions",
+        "kind": "admissions",
+        "url": "https://www.utsc.utoronto.ca/admissions",
+        "source": "utsc-cs"
+      },
+      {
+        "label": "Computer Science programme page",
+        "kind": "programs",
+        "url": "https://www.utsc.utoronto.ca/admissions/programs/computer-science",
+        "source": "utsc-cs"
+      },
+      {
+        "label": "UTSC tuition and fees",
+        "kind": "fees",
+        "url": "https://www.utsc.utoronto.ca/admissions/tuition-and-fees",
+        "source": "utsc-fees"
+      }
+    ]
+  },
+  "dataNotes": [
+    "This profile is source-checked only for the University of Toronto Scarborough campus's Computer Science programme. It does not describe every University of Toronto campus, programme or fee.",
+    "No recognition or accreditation claim is recorded for this institution in this release.",
+    "Fee figures are the current-year (2026–27) table published for planning; the page states that 2027–28 fees will be approved in spring 2027."
+  ],
+  "sources": {
+    "uoft-home": {
+      "url": "https://www.utoronto.ca/",
+      "title": "University of Toronto",
+      "publisher": "University of Toronto",
+      "retrievedAt": "2026-10-17"
+    },
+    "utsc-cs": {
+      "url": "https://www.utsc.utoronto.ca/admissions/programs/computer-science",
+      "title": "Computer Science",
+      "publisher": "University of Toronto Scarborough",
+      "retrievedAt": "2026-10-17",
+      "effectiveAt": "Fall 2027 entry"
+    },
+    "utsc-fees": {
+      "url": "https://www.utsc.utoronto.ca/admissions/tuition-and-fees",
+      "title": "Tuition and fees",
+      "publisher": "University of Toronto Scarborough",
+      "retrievedAt": "2026-10-17",
+      "effectiveAt": "2026–27 fees, published to estimate fall 2027"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="UniScope">
+  <circle cx="32" cy="32" r="28" fill="none" stroke="#0e2a2a" stroke-width="3"/>
+  <g stroke="#0e2a2a" stroke-width="3" stroke-linecap="round">
+    <path d="M32 1v6"/><path d="M32 57v6"/><path d="M1 32h6"/><path d="M57 32h6"/>
+  </g>
+  <path d="M32 17l12 8H20z" fill="#b8741a"/>
+  <rect x="20" y="27" width="24" height="2.5" rx="1" fill="#0e2a2a"/>
+  <g fill="#0e2a2a">
+    <rect x="22" y="32" width="3" height="13" rx="1"/>
+    <rect x="30.5" y="32" width="3" height="13" rx="1"/>
+    <rect x="39" y="32" width="3" height="13" rx="1"/>
+    <rect x="20" y="47" width="24" height="2.5" rx="1"/>
+  </g>
+  <circle cx="51" cy="17" r="3" fill="#b8741a"/>
+</svg>

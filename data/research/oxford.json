@@ -1,0 +1,234 @@
+{
+  "schemaVersion": 1,
+  "key": "university-of-oxford",
+  "profileSource": "ox-home",
+  "match": {
+    "rorId": "https://ror.org/052gg0110",
+    "domains": [
+      "ox.ac.uk"
+    ],
+    "name": "University of Oxford",
+    "countryCode": "GB"
+  },
+  "names": {
+    "primary": "University of Oxford",
+    "official": "University of Oxford",
+    "aliases": [
+      "Oxford University"
+    ]
+  },
+  "website": "https://www.ox.ac.uk/",
+  "kind": "university",
+  "languages": [],
+  "campuses": [],
+  "recognition": [
+    {
+      "body": "Office for Students (OfS)",
+      "bodyUrl": "https://www.officeforstudents.org.uk/",
+      "scope": "England — registration as an approved (fee cap) higher education provider under the Higher Education and Research Act 2017",
+      "status": "approved",
+      "notes": "The University's own page states it has been on the OfS register as an approved (fee cap) provider since July 2018. Registration is not an accreditation of every course or campus.",
+      "source": "ox-ofs"
+    }
+  ],
+  "programs": [
+    {
+      "id": "ox-cs",
+      "name": "Computer Science",
+      "degreeLevel": "bachelor",
+      "subjectArea": "computer-science",
+      "language": null,
+      "studyModes": [
+        "full-time"
+      ],
+      "duration": "3 years (BA) or 4 years (MCompSci)",
+      "faculty": "Department of Computer Science",
+      "admissionsUrl": "https://www.ox.ac.uk/admissions/undergraduate/courses/course-listing/computer-science",
+      "source": "ox-cs",
+      "notes": "Degree awarded: BA or MCompSci. UCAS code G400. All applicants apply for the four-year course and decide by the end of year three whether to continue.",
+      "tuition": [],
+      "deadlines": []
+    },
+    {
+      "id": "ox-ppe",
+      "name": "Philosophy, Politics and Economics",
+      "degreeLevel": "bachelor",
+      "subjectArea": "social-sciences",
+      "language": null,
+      "studyModes": [],
+      "duration": "3 years",
+      "admissionsUrl": "https://www.ox.ac.uk/admissions/undergraduate/courses/course-listing/philosophy-politics-and-economics",
+      "source": "ox-ppe",
+      "notes": "Degree awarded: BA. UCAS code L0V0.",
+      "tuition": [],
+      "deadlines": []
+    }
+  ],
+  "tuition": [
+    {
+      "label": "Overseas undergraduate course fee",
+      "amount": {
+        "kind": "range",
+        "min": 39620,
+        "max": 66580,
+        "currency": "GBP"
+      },
+      "unit": "per-year",
+      "coverage": "unclear",
+      "academicYear": "2027/28",
+      "intake": "October 2027",
+      "applicantCategory": "international",
+      "degreeLevel": "bachelor",
+      "studyMode": "full-time",
+      "notes": "Page gives the range 'between £39,620 and £66,580' and warns that clinical medicine fees are significantly higher. The page says course fees cover tuition, supervision, academic services and college services, but not residential or living costs; it does not enumerate every mandatory charge.",
+      "source": "ox-fees"
+    },
+    {
+      "label": "Home undergraduate course fee",
+      "amount": {
+        "kind": "exact",
+        "min": 10050,
+        "max": 10050,
+        "currency": "GBP"
+      },
+      "unit": "per-year",
+      "coverage": "unclear",
+      "academicYear": "2027/28",
+      "intake": "October 2027",
+      "applicantCategory": "home",
+      "degreeLevel": "bachelor",
+      "studyMode": "full-time",
+      "notes": "Stated as the government fee cap for 2027/28 for a first undergraduate degree. The page says fees and charges usually increase annually.",
+      "source": "ox-fees"
+    }
+  ],
+  "scholarships": [
+    {
+      "name": "Crankstart Scholarship",
+      "description": "Non-repayable bursary worth up to £6,500 per year towards study and living costs, plus funded internships and other opportunities.",
+      "amountText": "Up to £6,500 per year",
+      "audience": "UK-resident students studying for their first undergraduate degree, with annual household income of £32,500 or less",
+      "url": "https://www.ox.ac.uk/admissions/undergraduate/fees-and-funding/oxford-bursaries-and-scholarships",
+      "source": "ox-scholarships"
+    },
+    {
+      "name": "Reach Oxford Scholarship",
+      "description": "Course fee, an annual grant towards living costs and one return air fare per year, for students from low-income countries.",
+      "amountText": "Course fee plus living-cost grant and one return air fare per year",
+      "audience": "Students from low-income countries",
+      "url": "https://www.ox.ac.uk/admissions/undergraduate/fees-and-funding/oxford-bursaries-and-scholarships",
+      "source": "ox-scholarships"
+    }
+  ],
+  "admissions": {
+    "requirements": [
+      {
+        "text": "A*AA, including A*A in Mathematics and Further Mathematics if available (in any order).",
+        "degreeLevel": "bachelor",
+        "applicantCategory": "all",
+        "academicYear": "2027-28",
+        "intake": "October 2027",
+        "source": "ox-cs"
+      },
+      {
+        "text": "AAA.",
+        "degreeLevel": "bachelor",
+        "applicantCategory": "all",
+        "academicYear": "2027-28",
+        "intake": "October 2027",
+        "source": "ox-ppe"
+      }
+    ],
+    "deadlines": [
+      {
+        "date": "2026-10-15",
+        "dateText": "15 October 2026, 6pm UK time",
+        "intake": "October 2027 or deferred October 2028",
+        "academicYear": "2027-28",
+        "applicantCategory": "all",
+        "degreeLevel": "bachelor",
+        "notes": "University-wide undergraduate UCAS deadline; Oxford states it is the same for all applicants, including international applicants.",
+        "source": "ox-apply"
+      }
+    ],
+    "links": [
+      {
+        "label": "Undergraduate admissions",
+        "kind": "admissions",
+        "url": "https://www.ox.ac.uk/admissions/undergraduate",
+        "source": "ox-apply"
+      },
+      {
+        "label": "Course listing",
+        "kind": "programs",
+        "url": "https://www.ox.ac.uk/admissions/undergraduate/courses/course-listing",
+        "source": "ox-apply"
+      },
+      {
+        "label": "Fees and funding",
+        "kind": "fees",
+        "url": "https://www.ox.ac.uk/admissions/undergraduate/fees-and-funding",
+        "source": "ox-fees"
+      },
+      {
+        "label": "Bursaries and scholarships",
+        "kind": "scholarships",
+        "url": "https://www.ox.ac.uk/admissions/undergraduate/fees-and-funding/oxford-bursaries-and-scholarships",
+        "source": "ox-scholarships"
+      }
+    ]
+  },
+  "dataNotes": [
+    "Facts labelled 2027 entry or 2027/28 were read from the University's pages for that entry year on 2026-10-17.",
+    "Oxford's colleges are not listed as separate institutions here. The course fee range is university-published; individual course fees vary."
+  ],
+  "sources": {
+    "ox-home": {
+      "url": "https://www.ox.ac.uk/",
+      "title": "University of Oxford",
+      "publisher": "University of Oxford",
+      "retrievedAt": "2026-10-17"
+    },
+    "ox-fees": {
+      "url": "https://www.ox.ac.uk/admissions/undergraduate/fees-and-funding/course-fees",
+      "title": "Course fees for 2027 entry",
+      "publisher": "University of Oxford",
+      "retrievedAt": "2026-10-17",
+      "effectiveAt": "2027/28 academic year"
+    },
+    "ox-cs": {
+      "url": "https://www.ox.ac.uk/admissions/undergraduate/courses/course-listing/computer-science",
+      "title": "Computer Science",
+      "publisher": "University of Oxford",
+      "retrievedAt": "2026-10-17",
+      "effectiveAt": "2027 entry"
+    },
+    "ox-ppe": {
+      "url": "https://www.ox.ac.uk/admissions/undergraduate/courses/course-listing/philosophy-politics-and-economics",
+      "title": "Philosophy, Politics and Economics",
+      "publisher": "University of Oxford",
+      "retrievedAt": "2026-10-17",
+      "effectiveAt": "2027 entry"
+    },
+    "ox-apply": {
+      "url": "https://www.ox.ac.uk/admissions/undergraduate/applying",
+      "title": "Applying to Oxford",
+      "publisher": "University of Oxford",
+      "retrievedAt": "2026-10-17",
+      "effectiveAt": "2027 entry"
+    },
+    "ox-scholarships": {
+      "url": "https://www.ox.ac.uk/admissions/undergraduate/fees-and-funding/oxford-bursaries-and-scholarships",
+      "title": "Oxford bursaries and scholarships",
+      "publisher": "University of Oxford",
+      "retrievedAt": "2026-10-17",
+      "effectiveAt": "Students starting in October 2027"
+    },
+    "ox-ofs": {
+      "url": "https://www.ox.ac.uk/about/how-we-are-run/governance-finance/ofs",
+      "title": "Office for Students Registration",
+      "publisher": "University of Oxford",
+      "retrievedAt": "2026-10-17"
+    }
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "key": "westminster-international-university-tashkent",
+  "profileSource": "wiut-home",
+  "match": {
+    "rorId": "https://ror.org/032vgar48",
+    "domains": ["wiut.uz"],
+    "name": "Westminster International University in Tashkent",
+    "countryCode": "UZ"
+  },
+  "names": {
+    "primary": "Westminster International University in Tashkent",
+    "official": "Westminster International University in Tashkent",
+    "aliases": ["WIUT"]
+  },
+  "website": "https://www.wiut.uz/",
+  "kind": "university",
+  "languages": ["en"],
+  "campuses": [],
+  "recognition": [
+    {
+      "body": "National Quality Assurance Agency for Education (NQAAE), Uzbekistan",
+      "bodyUrl": "https://nqaae.uz/",
+      "scope": "BSc (Hons) in Computer Science — programme-level accreditation",
+      "status": "accredited",
+      "notes": "The programme page states the award is validated by the University of Westminster (UK) and accredited by NQAAE. The page links a NQAAE programme-structure PDF. This entry does not claim accreditation for every WIUT programme.",
+      "source": "wiut-cs"
+    }
+  ],
+  "programs": [
+    {
+      "id": "wiut-bsc-cs",
+      "name": "BSc (Hons) in Computer Science",
+      "degreeLevel": "bachelor",
+      "subjectArea": "computer-science",
+      "language": "en",
+      "studyModes": ["full-time"],
+      "duration": "3 years (full time)",
+      "faculty": "Faculty of Social and Applied Sciences",
+      "admissionsUrl": "https://www.wiut.uz/bsc-hons-in-computer-science",
+      "source": "wiut-cs",
+      "notes": "Award: Bachelor of Science (Hons). Start: September each academic year. The programme page states the award is validated by the University of Westminster (UK) and accredited by NQAAE. Fees for this programme are shown in the institution-wide section because the public fee tables are published per course level, not per programme.",
+      "tuition": [],
+      "deadlines": []
+    }
+  ],
+  "tuition": [
+    {
+      "label": "International undergraduate course fee",
+      "amount": { "kind": "exact", "min": 54600000, "max": 54600000, "currency": "UZS" },
+      "unit": "per-year",
+      "coverage": "unclear",
+      "academicYear": "2026/27",
+      "intake": "September 2026",
+      "applicantCategory": "international",
+      "degreeLevel": "bachelor",
+      "studyMode": "full-time",
+      "notes": "Published as the tuition fee for undergraduate courses starting in 2026/27. The page does not state whether other mandatory charges are included. It also prints an approximate USD figure using an exchange rate dated 7 April 2026; UniScope keeps the original UZS amount and applies no conversion.",
+      "source": "wiut-tuition-international"
+    },
+    {
+      "label": "Domestic undergraduate course fee",
+      "amount": { "kind": "exact", "min": 38820000, "max": 38820000, "currency": "UZS" },
+      "unit": "per-year",
+      "coverage": "unclear",
+      "academicYear": "2026/27",
+      "intake": "September 2026",
+      "applicantCategory": "domestic",
+      "degreeLevel": "bachelor",
+      "studyMode": "full-time",
+      "notes": "Published as the tuition fee for undergraduate courses in 2026/27, per academic year. The page does not state whether other mandatory charges are included. The Computer Science programme page lists the same domestic figure.",
+      "source": "wiut-tuition-domestic"
+    }
+  ],
+  "scholarships": [],
+  "admissions": {
+    "requirements": [
+      {
+        "id": "wiut-cs-entry",
+        "text": "BSc (Hons) in Computer Science: at least one of — successful completion of an appropriate International Foundation course; successful completion of the first year of an appropriate degree at a recognised Uzbek or similar university; two relevant GCE A level passes plus three GCSE passes at grade C or above including English Language and Mathematics; an Advanced GNVQ; or another equivalent qualification normally accepted for entry (e.g. International Baccalaureate).",
+        "degreeLevel": "bachelor",
+        "applicantCategory": "all",
+        "academicYear": "2026-27",
+        "intake": "September 2026",
+        "source": "wiut-cs"
+      },
+      {
+        "id": "wiut-cs-english",
+        "text": "BSc (Hons) in Computer Science: English proficiency shown by IELTS 6.5 with at least 6.0 in the writing component, or TOEFL iBT 85 overall with at least 22 in writing, or secondary education completed in English with a GCSE-equivalent English grade C or above. The page states that the TOEFL Home Edition is not accepted for entry to WIUT degree programmes.",
+        "degreeLevel": "bachelor",
+        "applicantCategory": "all",
+        "academicYear": "2026-27",
+        "intake": "September 2026",
+        "source": "wiut-cs"
+      },
+      {
+        "id": "wiut-cs-maths-age",
+        "text": "BSc (Hons) in Computer Science: acceptable mathematics competence shown by a pass in a University of Westminster-approved maths test, GCSE/O-level Mathematics at grade C or above, an SAT mathematics score of 570, or a foundation Quantitative Methods pass. Applicants must be 18 at the start of the academic year, which runs from 1 October to 30 September.",
+        "degreeLevel": "bachelor",
+        "applicantCategory": "all",
+        "academicYear": "2026-27",
+        "intake": "September 2026",
+        "source": "wiut-cs"
+      }
+    ],
+    "deadlines": [
+      {
+        "id": "wiut-ug-2026-deadline",
+        "date": "2026-08-17",
+        "dateText": "17 August 2026",
+        "intake": "September 2026",
+        "academicYear": "2026-27",
+        "applicantCategory": "all",
+        "degreeLevel": "bachelor",
+        "notes": "Listed as the application deadline for undergraduate programmes for 2026/27 entry. It has passed. When the pages were read on 2026-10-17, no 2027/28 deadline had been published.",
+        "source": "wiut-direct-entry"
+      }
+    ],
+    "links": [
+      {
+        "label": "Admissions",
+        "kind": "admissions",
+        "url": "https://www.wiut.uz/apply",
+        "source": "wiut-direct-entry"
+      },
+      {
+        "label": "Undergraduate programmes",
+        "kind": "programs",
+        "url": "https://www.wiut.uz/undergraduate",
+        "source": "wiut-cs"
+      },
+      {
+        "label": "Apply online (WIUT admission portal)",
+        "kind": "application",
+        "url": "https://admission.wiut.uz/",
+        "source": "wiut-direct-entry"
+      },
+      {
+        "label": "Tuition fees — domestic applicants",
+        "kind": "fees",
+        "url": "https://www.wiut.uz/tuition-fees",
+        "source": "wiut-tuition-domestic"
+      },
+      {
+        "label": "Tuition fees — international applicants",
+        "kind": "fees",
+        "url": "https://www.wiut.uz/tuition-fees-international",
+        "source": "wiut-tuition-international"
+      }
+    ]
+  },
+  "dataNotes": [
+    "Fees, requirements and the deadline above describe the 2026/27 academic year. The 2027/28 cycle had not been published when these pages were read.",
+    "The 17 August 2026 undergraduate application deadline has already passed. It is shown with its year so it is not mistaken for the next cycle.",
+    "The university's home page states that all programmes are taught in English; the Computer Science programme page itself does not repeat that statement.",
+    "Only the BSc (Hons) in Computer Science programme was reviewed. Other WIUT programmes, scholarships and campus arrangements were not checked for this release.",
+    "The international fee page prints approximate USD figures using an exchange rate dated 7 April 2026. UniScope stores the original UZS amount and performs no currency conversion."
+  ],
+  "sources": {
+    "wiut-home": {
+      "url": "https://www.wiut.uz/",
+      "title": "Westminster International University in Tashkent",
+      "publisher": "Westminster International University in Tashkent",
+      "retrievedAt": "2026-10-17"
+    },
+    "wiut-cs": {
+      "url": "https://www.wiut.uz/bsc-hons-in-computer-science",
+      "title": "BSc (Hons) in Computer Science",
+      "publisher": "Westminster International University in Tashkent",
+      "retrievedAt": "2026-10-17",
+      "effectiveAt": "2026-2027 academic year entry requirements"
+    },
+    "wiut-tuition-international": {
+      "url": "https://www.wiut.uz/tuition-fees-international",
+      "title": "Tuition fees international",
+      "publisher": "Westminster International University in Tashkent",
+      "retrievedAt": "2026-10-17",
+      "effectiveAt": "Academic year 2026/27"
+    },
+    "wiut-tuition-domestic": {
+      "url": "https://www.wiut.uz/tuition-fees",
+      "title": "Tuition fees",
+      "publisher": "Westminster International University in Tashkent",
+      "retrievedAt": "2026-10-17",
+      "effectiveAt": "Academic year 2026/27"
+    },
+    "wiut-direct-entry": {
+      "url": "https://wiut.uz/direct-entry-transfer",
+      "title": "Direct entry/transfer admissions",
+      "publisher": "Westminster International University in Tashkent",
+      "retrievedAt": "2026-10-17",
+      "effectiveAt": "2026/27 entry"
+    }
+  }
+}
