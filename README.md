@@ -44,7 +44,10 @@ Copy [.env.example](.env.example) to your shell configuration. The server does *
 | `PORT`, `HOST` | Listen address (default `8787` dev, `3000` production; host `0.0.0.0`). |
 | `UNISCOPE_DATA_DIR` | Directory containing `institutions.json.gz` and `coverage.json` (default `./data/build`). |
 | `UNISCOPE_VALIDATE_DATA=1` | Validate the whole dataset against the Zod schema at startup. |
-| `REPORT_STORE_DIR` | Correction-report JSONL directory (default `./data/runtime`). Use a persistent volume in production. |
+| `REPORT_STORE_DIR` | Correction-report JSONL directory (default `./data/runtime`). Use a persistent volume in production. Ignored when Supabase is configured. |
+| `SUPABASE_URL` | Supabase project URL. Enables the durable PostgREST report queue used on Vercel. |
+| `SUPABASE_SERVICE_ROLE_KEY` | Server-side Supabase key for reports. Never expose it to the browser. |
+| `SUPABASE_REPORTS_TABLE` | Optional report table name; defaults to `reports`. |
 | `ADMIN_TOKEN` | Enables `/admin` review. Must be at least 24 characters; otherwise admin routes return 503. |
 | `ADMIN_SESSION_SECRET` | Optional HMAC key for admin cookies; derived from `ADMIN_TOKEN` when absent. |
 | `TRUST_PROXY=1` | Trust the first proxy hop for client IPs. Only behind a proxy that overwrites `X-Forwarded-For`. |
@@ -118,9 +121,11 @@ What was executed, what was read from official pages, and what remains unverifie
 
 ## Hosting and cost
 
-Nothing paid is configured. This release has no database, email service or AI provider. A static host plus a small Node service is enough; the dataset is ~2.9 MB gzipped and the server keeps it in memory (~200–350 MB RSS with the current build).
+The production deployment is on Vercel (`uniscope-app`): the Vite build is served statically and one Vercel Function (`api/index.ts`) wraps the Express API. The dataset is ~2.9 MB gzipped and is bundled with the Function via `includeFiles: data/build/**`; it stays in memory (~250–400 MB), so the Function uses 1024 MB and a 60 s maximum duration. See [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) for the environment variables and the one-time Supabase setup.
 
-Free-tier examples (limits change; verify before deploying): Cloudflare Pages static hosting and a small Workers/Functions tier, or Vercel/Netlify hobby tiers, plus free GitHub Actions minutes for the scheduled ingest. Cloudflare Pages has a **25 MB per-file** limit, which is why the dataset ships gzipped rather than as 56 MB JSON. The report queue is a JSONL file and is **not durable** on ephemeral filesystems; production use needs a persistent volume or a database (a new cost/decision).
+Supabase (free tier) stores the correction reports through PostgREST, so the queue survives cold starts and is shared by every Function instance. The local server still uses a JSONL file (`data/runtime/reports.jsonl`), which is **not durable** on ephemeral filesystems. No email service or AI provider is used.
+
+Other free-tier examples (limits change; verify before deploying): Cloudflare Pages static hosting plus a small Workers/Functions tier, or Netlify hobby tiers, plus free GitHub Actions minutes for the scheduled ingest. Cloudflare Pages has a **25 MB per-file** limit, which is why the dataset ships gzipped rather than as 56 MB JSON.
 
 ## Limitations and next work
 
