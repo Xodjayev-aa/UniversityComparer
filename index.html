@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>UniScope — university discovery and comparison</title>
+    <meta
+      name="description"
+      content="Find universities worldwide and compare sourced facts. Free, no account. Missing information is labelled, never invented."
+    />
+    <meta name="theme-color" content="#0e2a2a" />
+    <meta name="color-scheme" content="light" />
+    <link rel="icon" href="/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/icons/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <meta property="og:title" content="UniScope — university discovery and comparison" />
+    <meta
+      property="og:description"
+      content="Search universities and compare only the facts with a cited source. Directory coverage is broad; source-checked depth is labelled."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/icons/icon-512.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="robots" content="index, follow" />
+  </head>
+  <body>
+    <noscript>
+      <div style="font-family: system-ui, sans-serif; max-width: 40rem; margin: 3rem auto; padding: 1rem">
+        <h1>UniScope needs JavaScript</h1>
+        <p>
+          Search and comparison run in your browser. Without JavaScript you can still read
+          <a href="/api/coverage">the coverage summary as JSON</a>. We do not render a degraded page that might imply
+          live data it cannot load.
+        </p>
+      </div>
+    </noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

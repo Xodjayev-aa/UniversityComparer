@@ -1,0 +1,1885 @@
+{
+  "generatedAt": "2026-10-17T05:49:02.159Z",
+  "directoryAsOf": "2026-10-06",
+  "sources": [
+    {
+      "id": "ror",
+      "name": "Research Organization Registry (ROR) data dump",
+      "publisher": "ROR / California Digital Library, Crossref, DataCite",
+      "url": "https://ror.readme.io/docs/data-dump",
+      "license": "CC0 1.0 Universal",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "retrievedAt": "2026-10-17",
+      "release": "v2.14 (2026-10-06)",
+      "use": "Discovery: institution names, aliases, local-script names, country, city, website, domains and coordinates.",
+      "limitations": "ROR is a research-organisation identifier registry, not a university or accreditation register. Its “education” type includes non-university organisations. It records no programmes, fees, deadlines or accreditation status."
+    },
+    {
+      "id": "hipo",
+      "name": "University Domains and Names Data List",
+      "publisher": "Hipo (community project)",
+      "url": "https://github.com/Hipo/university-domains-list",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/Hipo/university-domains-list/blob/master/LICENSE.txt",
+      "retrievedAt": "2026-10-17",
+      "release": "sha256:4c8b526235db",
+      "use": "Discovery: community-maintained university/college name, country and domain listings.",
+      "limitations": "Community-maintained and not authoritative. It is not complete, does not prove university status or accreditation, includes some non-university institutions, and has no programme, fee or deadline data."
+    }
+  ],
+  "totals": {
+    "records": 32748,
+    "universityScope": 25290,
+    "educationScope": 7458,
+    "sourceChecked": 2,
+    "programs": 3,
+    "feeFacts": 5,
+    "deadlineFacts": 3,
+    "recognitionFacts": 1,
+    "countries": 224,
+    "universityCountries": 223,
+    "cities": 8734,
+    "recordsWithCity": 30174,
+    "withDomains": 21451,
+    "curatedFacts": 28,
+    "officialSourcePages": 10,
+    "officialSourceDomains": 3,
+    "recordsWithRecognition": 1,
+    "recordsWithFeeFacts": 2
+  },
+  "countries": [
+    {
+      "code": "AF",
+      "name": "Afghanistan",
+      "region": "Asia",
+      "records": 73,
+      "universityRecords": 73,
+      "sourceChecked": 0
+    },
+    {
+      "code": "AX",
+      "name": "Åland",
+      "region": "Europe",
+      "records": 1,
+      "universityRecords": 1,
+      "sourceChecked": 0
+    },
+    {
+      "code": "AL",
+      "name": "Albania",
+      "region": "Europe",
+      "records": 40,
+      "universityRecords": 37,
+      "sourceChecked": 0
+    },
+    {
+      "code": "DZ",
+      "name": "Algeria",
+      "region": "Africa",
+      "records": 129,
+      "universityRecords": 74,
+      "sourceChecked": 0
+    },
+    {
+      "code": "AS",
+      "name": "American Samoa",
+      "region": "Oceania",
+      "records": 2,
+      "universityRecords": 1,
+      "sourceChecked": 0
+    },
+    {
+      "code": "AD",
+      "name": "Andorra",
+      "region": "Europe",
+      "records": 2,
+      "universityRecords": 2,
+      "sourceChecked": 0
+    },
+    {
+      "code": "AO",
+      "name": "Angola",
+      "region": "Africa",
+      "records": 35,
+      "universityRecords": 33,
+      "sourceChecked": 0
+    },
+    {
+      "code": "AI",
+      "name": "Anguilla",
+      "region": "Americas",
+      "records": 1,
+      "universityRecords": 1,
+      "sourceChecked": 0
+    },
+    {
+      "code": "AG",
+      "name": "Antigua and Barbuda",
+      "region": "Americas",
+      "records": 3,
+      "universityRecords": 3,
+      "sourceChecked": 0
+    },
+    {
+      "code": "AR",
+      "name": "Argentina",
+      "region": "Americas",
+      "records": 195,
+      "universityRecords": 141,
+      "sourceChecked": 0
+    },
+    {
+      "code": "AM",
+      "name": "Armenia",
+      "region": "Asia",
+      "records": 28,
+      "universityRecords": 26,
+      "sourceChecked": 0
+    },
+    {
+      "code": "AW",
+      "name": "Aruba",
+      "region": "Americas",
+      "records": 1,
+      "universityRecords": 1,
+      "sourceChecked": 0
+    },
+    {
+      "code": "AU",
+      "name": "Australia",
+      "region": "Oceania",
+      "records": 153,
+      "universityRecords": 114,
+      "sourceChecked": 0
+    },
+    {
+      "code": "AT",
+      "name": "Austria",
+      "region": "Europe",
+      "records": 118,
+      "universityRecords": 90,
+      "sourceChecked": 0
+    },
+    {
+      "code": "AZ",
+      "name": "Azerbaijan",
+      "region": "Asia",
+      "records": 63,
+      "universityRecords": 49,
+      "sourceChecked": 0
+    },
+    {
+      "code": "BS",
+      "name": "Bahamas",
+      "region": "Americas",
+      "records": 5,
+      "universityRecords": 4,
+      "sourceChecked": 0
+    },
+    {
+      "code": "BH",
+      "name": "Bahrain",
+      "region": "Asia",
+      "records": 20,
+      "universityRecords": 20,
+      "sourceChecked": 0
+    },
+    {
+      "code": "BD",
+      "name": "Bangladesh",
+      "region": "Asia",
+      "records": 224,
+      "universityRecords": 199,
+      "sourceChecked": 0
+    },
+    {
+      "code": "BB",
+      "name": "Barbados",
+      "region": "Americas",
+      "records": 7,
+      "universityRecords": 7,
+      "sourceChecked": 0
+    },
+    {
+      "code": "BY",
+      "name": "Belarus",
+      "region": "Europe",
+      "records": 62,
+      "universityRecords": 49,
+      "sourceChecked": 0
+    },
+    {
+      "code": "BE",
+      "name": "Belgium",
+      "region": "Europe",
+      "records": 117,
+      "universityRecords": 64,
+      "sourceChecked": 0
+    },
+    {
+      "code": "BZ",
+      "name": "Belize",
+      "region": "Americas",
+      "records": 7,
+      "universityRecords": 7,
+      "sourceChecked": 0
+    },
+    {
+      "code": "BJ",
+      "name": "Benin",
+      "region": "Africa",
+      "records": 24,
+      "universityRecords": 19,
+      "sourceChecked": 0
+    },
+    {
+      "code": "BM",
+      "name": "Bermuda",
+      "region": "Americas",
+      "records": 1,
+      "universityRecords": 1,
+      "sourceChecked": 0
+    },
+    {
+      "code": "BT",
+      "name": "Bhutan",
+      "region": "Asia",
+      "records": 5,
+      "universityRecords": 4,
+      "sourceChecked": 0
+    },
+    {
+      "code": "BO",
+      "name": "Bolivia",
+      "region": "Americas",
+      "records": 60,
+      "universityRecords": 58,
+      "sourceChecked": 0
+    },
+    {
+      "code": "BQ",
+      "name": "Bonaire, Sint Eustatius, and Saba",
+      "region": "Americas",
+      "records": 2,
+      "universityRecords": 2,
+      "sourceChecked": 0
+    },
+    {
+      "code": "BA",
+      "name": "Bosnia and Herzegovina",
+      "region": "Europe",
+      "records": 30,
+      "universityRecords": 28,
+      "sourceChecked": 0
+    },
+    {
+      "code": "BW",
+      "name": "Botswana",
+      "region": "Africa",
+      "records": 13,
+      "universityRecords": 11,
+      "sourceChecked": 0
+    },
+    {
+      "code": "BR",
+      "name": "Brazil",
+      "region": "Americas",
+      "records": 617,
+      "universityRecords": 417,
+      "sourceChecked": 0
+    },
+    {
+      "code": "VG",
+      "name": "British Virgin Islands",
+      "region": "Americas",
+      "records": 2,
+      "universityRecords": 2,
+      "sourceChecked": 0
+    },
+    {
+      "code": "BN",
+      "name": "Brunei",
+      "region": "Asia",
+      "records": 14,
+      "universityRecords": 7,
+      "sourceChecked": 0
+    },
+    {
+      "code": "BG",
+      "name": "Bulgaria",
+      "region": "Europe",
+      "records": 68,
+      "universityRecords": 54,
+      "sourceChecked": 0
+    },
+    {
+      "code": "BF",
+      "name": "Burkina Faso",
+      "region": "Africa",
+      "records": 19,
+      "universityRecords": 16,
+      "sourceChecked": 0
+    },
+    {
+      "code": "BI",
+      "name": "Burundi",
+      "region": "Africa",
+      "records": 16,
+      "universityRecords": 11,
+      "sourceChecked": 0
+    },
+    {
+      "code": "CV",
+      "name": "Cabo Verde",
+      "region": "Africa",
+      "records": 5,
+      "universityRecords": 3,
+      "sourceChecked": 0
+    },
+    {
+      "code": "KH",
+      "name": "Cambodia",
+      "region": "Asia",
+      "records": 66,
+      "universityRecords": 56,
+      "sourceChecked": 0
+    },
+    {
+      "code": "CM",
+      "name": "Cameroon",
+      "region": "Africa",
+      "records": 53,
+      "universityRecords": 37,
+      "sourceChecked": 0
+    },
+    {
+      "code": "CA",
+      "name": "Canada",
+      "region": "Americas",
+      "records": 439,
+      "universityRecords": 306,
+      "sourceChecked": 1
+    },
+    {
+      "code": "KY",
+      "name": "Cayman Islands",
+      "region": "Americas",
+      "records": 4,
+      "universityRecords": 3,
+      "sourceChecked": 0
+    },
+    {
+      "code": "CF",
+      "name": "Central African Republic",
+      "region": "Africa",
+      "records": 3,
+      "universityRecords": 2,
+      "sourceChecked": 0
+    },
+    {
+      "code": "TD",
+      "name": "Chad",
+      "region": "Africa",
+      "records": 9,
+      "universityRecords": 9,
+      "sourceChecked": 0
+    },
+    {
+      "code": "CL",
+      "name": "Chile",
+      "region": "Americas",
+      "records": 113,
+      "universityRecords": 82,
+      "sourceChecked": 0
+    },
+    {
+      "code": "CN",
+      "name": "China",
+      "region": "Asia",
+      "records": 3349,
+      "universityRecords": 3231,
+      "sourceChecked": 0
+    },
+    {
+      "code": "CO",
+      "name": "Colombia",
+      "region": "Americas",
+      "records": 244,
+      "universityRecords": 194,
+      "sourceChecked": 0
+    },
+    {
+      "code": "KM",
+      "name": "Comoros",
+      "region": "Africa",
+      "records": 1,
+      "universityRecords": 1,
+      "sourceChecked": 0
+    },
+    {
+      "code": "CG",
+      "name": "Congo Republic",
+      "region": "Africa",
+      "records": 5,
+      "universityRecords": 5,
+      "sourceChecked": 0
+    },
+    {
+      "code": "CR",
+      "name": "Costa Rica",
+      "region": "Americas",
+      "records": 64,
+      "universityRecords": 58,
+      "sourceChecked": 0
+    },
+    {
+      "code": "HR",
+      "name": "Croatia",
+      "region": "Europe",
+      "records": 63,
+      "universityRecords": 43,
+      "sourceChecked": 0
+    },
+    {
+      "code": "CU",
+      "name": "Cuba",
+      "region": "Americas",
+      "records": 40,
+      "universityRecords": 36,
+      "sourceChecked": 0
+    },
+    {
+      "code": "CW",
+      "name": "Curaçao",
+      "region": "Americas",
+      "records": 4,
+      "universityRecords": 3,
+      "sourceChecked": 0
+    },
+    {
+      "code": "CY",
+      "name": "Cyprus",
+      "region": "Europe",
+      "records": 53,
+      "universityRecords": 44,
+      "sourceChecked": 0
+    },
+    {
+      "code": "CZ",
+      "name": "Czechia",
+      "region": "Europe",
+      "records": 115,
+      "universityRecords": 66,
+      "sourceChecked": 0
+    },
+    {
+      "code": "DK",
+      "name": "Denmark",
+      "region": "Europe",
+      "records": 78,
+      "universityRecords": 46,
+      "sourceChecked": 0
+    },
+    {
+      "code": "DJ",
+      "name": "Djibouti",
+      "region": "Africa",
+      "records": 1,
+      "universityRecords": 1,
+      "sourceChecked": 0
+    },
+    {
+      "code": "DM",
+      "name": "Dominica",
+      "region": "Americas",
+      "records": 6,
+      "universityRecords": 6,
+      "sourceChecked": 0
+    },
+    {
+      "code": "DO",
+      "name": "Dominican Republic",
+      "region": "Americas",
+      "records": 41,
+      "universityRecords": 39,
+      "sourceChecked": 0
+    },
+    {
+      "code": "CD",
+      "name": "DR Congo",
+      "region": "Africa",
+      "records": 71,
+      "universityRecords": 50,
+      "sourceChecked": 0
+    },
+    {
+      "code": "EC",
+      "name": "Ecuador",
+      "region": "Americas",
+      "records": 117,
+      "universityRecords": 108,
+      "sourceChecked": 0
+    },
+    {
+      "code": "EG",
+      "name": "Egypt",
+      "region": "Africa",
+      "records": 130,
+      "universityRecords": 89,
+      "sourceChecked": 0
+    },
+    {
+      "code": "SV",
+      "name": "El Salvador",
+      "region": "Americas",
+      "records": 31,
+      "universityRecords": 27,
+      "sourceChecked": 0
+    },
+    {
+      "code": "GQ",
+      "name": "Equatorial Guinea",
+      "region": "Africa",
+      "records": 2,
+      "universityRecords": 2,
+      "sourceChecked": 0
+    },
+    {
+      "code": "ER",
+      "name": "Eritrea",
+      "region": "Africa",
+      "records": 2,
+      "universityRecords": 2,
+      "sourceChecked": 0
+    },
+    {
+      "code": "EE",
+      "name": "Estonia",
+      "region": "Europe",
+      "records": 27,
+      "universityRecords": 19,
+      "sourceChecked": 0
+    },
+    {
+      "code": "SZ",
+      "name": "Eswatini",
+      "region": "Africa",
+      "records": 2,
+      "universityRecords": 2,
+      "sourceChecked": 0
+    },
+    {
+      "code": "ET",
+      "name": "Ethiopia",
+      "region": "Africa",
+      "records": 72,
+      "universityRecords": 67,
+      "sourceChecked": 0
+    },
+    {
+      "code": "FO",
+      "name": "Faroe Islands",
+      "region": "Europe",
+      "records": 1,
+      "universityRecords": 1,
+      "sourceChecked": 0
+    },
+    {
+      "code": "FJ",
+      "name": "Fiji",
+      "region": "Oceania",
+      "records": 5,
+      "universityRecords": 5,
+      "sourceChecked": 0
+    },
+    {
+      "code": "FI",
+      "name": "Finland",
+      "region": "Europe",
+      "records": 67,
+      "universityRecords": 58,
+      "sourceChecked": 0
+    },
+    {
+      "code": "FR",
+      "name": "France",
+      "region": "Europe",
+      "records": 650,
+      "universityRecords": 357,
+      "sourceChecked": 0
+    },
+    {
+      "code": "GF",
+      "name": "French Guiana",
+      "region": "Americas",
+      "records": 2,
+      "universityRecords": 2,
+      "sourceChecked": 0
+    },
+    {
+      "code": "PF",
+      "name": "French Polynesia",
+      "region": "Oceania",
+      "records": 1,
+      "universityRecords": 1,
+      "sourceChecked": 0
+    },
+    {
+      "code": "GA",
+      "name": "Gabon",
+      "region": "Africa",
+      "records": 4,
+      "universityRecords": 3,
+      "sourceChecked": 0
+    },
+    {
+      "code": "GE",
+      "name": "Georgia",
+      "region": "Asia",
+      "records": 73,
+      "universityRecords": 63,
+      "sourceChecked": 0
+    },
+    {
+      "code": "DE",
+      "name": "Germany",
+      "region": "Europe",
+      "records": 761,
+      "universityRecords": 583,
+      "sourceChecked": 0
+    },
+    {
+      "code": "GH",
+      "name": "Ghana",
+      "region": "Africa",
+      "records": 133,
+      "universityRecords": 123,
+      "sourceChecked": 0
+    },
+    {
+      "code": "GI",
+      "name": "Gibraltar",
+      "region": "Europe",
+      "records": 1,
+      "universityRecords": 1,
+      "sourceChecked": 0
+    },
+    {
+      "code": "GR",
+      "name": "Greece",
+      "region": "Europe",
+      "records": 72,
+      "universityRecords": 44,
+      "sourceChecked": 0
+    },
+    {
+      "code": "GL",
+      "name": "Greenland",
+      "region": "Americas",
+      "records": 2,
+      "universityRecords": 2,
+      "sourceChecked": 0
+    },
+    {
+      "code": "GD",
+      "name": "Grenada",
+      "region": "Americas",
+      "records": 1,
+      "universityRecords": 1,
+      "sourceChecked": 0
+    },
+    {
+      "code": "GP",
+      "name": "Guadeloupe",
+      "region": "Americas",
+      "records": 3,
+      "universityRecords": 3,
+      "sourceChecked": 0
+    },
+    {
+      "code": "GU",
+      "name": "Guam",
+      "region": "Oceania",
+      "records": 3,
+      "universityRecords": 3,
+      "sourceChecked": 0
+    },
+    {
+      "code": "GT",
+      "name": "Guatemala",
+      "region": "Americas",
+      "records": 14,
+      "universityRecords": 13,
+      "sourceChecked": 0
+    },
+    {
+      "code": "GN",
+      "name": "Guinea",
+      "region": "Africa",
+      "records": 15,
+      "universityRecords": 9,
+      "sourceChecked": 0
+    },
+    {
+      "code": "GW",
+      "name": "Guinea-Bissau",
+      "region": "Africa",
+      "records": 2,
+      "universityRecords": 2,
+      "sourceChecked": 0
+    },
+    {
+      "code": "GY",
+      "name": "Guyana",
+      "region": "Americas",
+      "records": 5,
+      "universityRecords": 4,
+      "sourceChecked": 0
+    },
+    {
+      "code": "HT",
+      "name": "Haiti",
+      "region": "Americas",
+      "records": 17,
+      "universityRecords": 14,
+      "sourceChecked": 0
+    },
+    {
+      "code": "VA",
+      "name": "Holy See (Vatican City State)",
+      "region": "Other",
+      "records": 5,
+      "universityRecords": 5,
+      "sourceChecked": 0
+    },
+    {
+      "code": "HN",
+      "name": "Honduras",
+      "region": "Americas",
+      "records": 13,
+      "universityRecords": 12,
+      "sourceChecked": 0
+    },
+    {
+      "code": "HK",
+      "name": "Hong Kong",
+      "region": "Asia",
+      "records": 30,
+      "universityRecords": 26,
+      "sourceChecked": 0
+    },
+    {
+      "code": "HU",
+      "name": "Hungary",
+      "region": "Europe",
+      "records": 94,
+      "universityRecords": 74,
+      "sourceChecked": 0
+    },
+    {
+      "code": "IS",
+      "name": "Iceland",
+      "region": "Europe",
+      "records": 13,
+      "universityRecords": 12,
+      "sourceChecked": 0
+    },
+    {
+      "code": "IN",
+      "name": "India",
+      "region": "Asia",
+      "records": 2402,
+      "universityRecords": 1794,
+      "sourceChecked": 0
+    },
+    {
+      "code": "ID",
+      "name": "Indonesia",
+      "region": "Asia",
+      "records": 2237,
+      "universityRecords": 1211,
+      "sourceChecked": 0
+    },
+    {
+      "code": "IR",
+      "name": "Iran",
+      "region": "Asia",
+      "records": 427,
+      "universityRecords": 400,
+      "sourceChecked": 0
+    },
+    {
+      "code": "IQ",
+      "name": "Iraq",
+      "region": "Asia",
+      "records": 141,
+      "universityRecords": 135,
+      "sourceChecked": 0
+    },
+    {
+      "code": "IE",
+      "name": "Ireland",
+      "region": "Europe",
+      "records": 56,
+      "universityRecords": 42,
+      "sourceChecked": 0
+    },
+    {
+      "code": "IL",
+      "name": "Israel",
+      "region": "Asia",
+      "records": 73,
+      "universityRecords": 59,
+      "sourceChecked": 0
+    },
+    {
+      "code": "IT",
+      "name": "Italy",
+      "region": "Europe",
+      "records": 281,
+      "universityRecords": 199,
+      "sourceChecked": 0
+    },
+    {
+      "code": "CI",
+      "name": "Ivory Coast",
+      "region": "Africa",
+      "records": 19,
+      "universityRecords": 13,
+      "sourceChecked": 0
+    },
+    {
+      "code": "JM",
+      "name": "Jamaica",
+      "region": "Americas",
+      "records": 9,
+      "universityRecords": 9,
+      "sourceChecked": 0
+    },
+    {
+      "code": "JP",
+      "name": "Japan",
+      "region": "Asia",
+      "records": 1759,
+      "universityRecords": 1400,
+      "sourceChecked": 0
+    },
+    {
+      "code": "JO",
+      "name": "Jordan",
+      "region": "Asia",
+      "records": 40,
+      "universityRecords": 40,
+      "sourceChecked": 0
+    },
+    {
+      "code": "KZ",
+      "name": "Kazakhstan",
+      "region": "Asia",
+      "records": 115,
+      "universityRecords": 97,
+      "sourceChecked": 0
+    },
+    {
+      "code": "KE",
+      "name": "Kenya",
+      "region": "Africa",
+      "records": 97,
+      "universityRecords": 86,
+      "sourceChecked": 0
+    },
+    {
+      "code": "XK",
+      "name": "Kosovo",
+      "region": "Europe",
+      "records": 15,
+      "universityRecords": 13,
+      "sourceChecked": 0
+    },
+    {
+      "code": "KW",
+      "name": "Kuwait",
+      "region": "Asia",
+      "records": 19,
+      "universityRecords": 16,
+      "sourceChecked": 0
+    },
+    {
+      "code": "KG",
+      "name": "Kyrgyzstan",
+      "region": "Asia",
+      "records": 43,
+      "universityRecords": 34,
+      "sourceChecked": 0
+    },
+    {
+      "code": "LA",
+      "name": "Laos",
+      "region": "Asia",
+      "records": 11,
+      "universityRecords": 10,
+      "sourceChecked": 0
+    },
+    {
+      "code": "LV",
+      "name": "Latvia",
+      "region": "Europe",
+      "records": 56,
+      "universityRecords": 44,
+      "sourceChecked": 0
+    },
+    {
+      "code": "LB",
+      "name": "Lebanon",
+      "region": "Asia",
+      "records": 45,
+      "universityRecords": 44,
+      "sourceChecked": 0
+    },
+    {
+      "code": "LS",
+      "name": "Lesotho",
+      "region": "Africa",
+      "records": 1,
+      "universityRecords": 1,
+      "sourceChecked": 0
+    },
+    {
+      "code": "LR",
+      "name": "Liberia",
+      "region": "Africa",
+      "records": 7,
+      "universityRecords": 6,
+      "sourceChecked": 0
+    },
+    {
+      "code": "LY",
+      "name": "Libya",
+      "region": "Africa",
+      "records": 59,
+      "universityRecords": 46,
+      "sourceChecked": 0
+    },
+    {
+      "code": "LI",
+      "name": "Liechtenstein",
+      "region": "Europe",
+      "records": 4,
+      "universityRecords": 3,
+      "sourceChecked": 0
+    },
+    {
+      "code": "LT",
+      "name": "Lithuania",
+      "region": "Europe",
+      "records": 47,
+      "universityRecords": 41,
+      "sourceChecked": 0
+    },
+    {
+      "code": "LU",
+      "name": "Luxembourg",
+      "region": "Europe",
+      "records": 11,
+      "universityRecords": 5,
+      "sourceChecked": 0
+    },
+    {
+      "code": "MO",
+      "name": "Macao",
+      "region": "Asia",
+      "records": 8,
+      "universityRecords": 8,
+      "sourceChecked": 0
+    },
+    {
+      "code": "MG",
+      "name": "Madagascar",
+      "region": "Africa",
+      "records": 18,
+      "universityRecords": 12,
+      "sourceChecked": 0
+    },
+    {
+      "code": "MW",
+      "name": "Malawi",
+      "region": "Africa",
+      "records": 17,
+      "universityRecords": 16,
+      "sourceChecked": 0
+    },
+    {
+      "code": "MY",
+      "name": "Malaysia",
+      "region": "Asia",
+      "records": 730,
+      "universityRecords": 509,
+      "sourceChecked": 0
+    },
+    {
+      "code": "MV",
+      "name": "Maldives",
+      "region": "Asia",
+      "records": 8,
+      "universityRecords": 7,
+      "sourceChecked": 0
+    },
+    {
+      "code": "ML",
+      "name": "Mali",
+      "region": "Africa",
+      "records": 11,
+      "universityRecords": 8,
+      "sourceChecked": 0
+    },
+    {
+      "code": "MT",
+      "name": "Malta",
+      "region": "Europe",
+      "records": 13,
+      "universityRecords": 7,
+      "sourceChecked": 0
+    },
+    {
+      "code": "MQ",
+      "name": "Martinique",
+      "region": "Americas",
+      "records": 1,
+      "universityRecords": 1,
+      "sourceChecked": 0
+    },
+    {
+      "code": "MR",
+      "name": "Mauritania",
+      "region": "Africa",
+      "records": 5,
+      "universityRecords": 3,
+      "sourceChecked": 0
+    },
+    {
+      "code": "MU",
+      "name": "Mauritius",
+      "region": "Africa",
+      "records": 7,
+      "universityRecords": 5,
+      "sourceChecked": 0
+    },
+    {
+      "code": "YT",
+      "name": "Mayotte",
+      "region": "Africa",
+      "records": 1,
+      "universityRecords": 1,
+      "sourceChecked": 0
+    },
+    {
+      "code": "MX",
+      "name": "Mexico",
+      "region": "Americas",
+      "records": 744,
+      "universityRecords": 665,
+      "sourceChecked": 0
+    },
+    {
+      "code": "FM",
+      "name": "Micronesia",
+      "region": "Oceania",
+      "records": 2,
+      "universityRecords": 2,
+      "sourceChecked": 0
+    },
+    {
+      "code": "MD",
+      "name": "Moldova",
+      "region": "Europe",
+      "records": 29,
+      "universityRecords": 23,
+      "sourceChecked": 0
+    },
+    {
+      "code": "MC",
+      "name": "Monaco",
+      "region": "Europe",
+      "records": 1,
+      "universityRecords": 1,
+      "sourceChecked": 0
+    },
+    {
+      "code": "MN",
+      "name": "Mongolia",
+      "region": "Asia",
+      "records": 33,
+      "universityRecords": 29,
+      "sourceChecked": 0
+    },
+    {
+      "code": "ME",
+      "name": "Montenegro",
+      "region": "Europe",
+      "records": 7,
+      "universityRecords": 3,
+      "sourceChecked": 0
+    },
+    {
+      "code": "MS",
+      "name": "Montserrat",
+      "region": "Americas",
+      "records": 2,
+      "universityRecords": 2,
+      "sourceChecked": 0
+    },
+    {
+      "code": "MA",
+      "name": "Morocco",
+      "region": "Africa",
+      "records": 122,
+      "universityRecords": 47,
+      "sourceChecked": 0
+    },
+    {
+      "code": "MZ",
+      "name": "Mozambique",
+      "region": "Africa",
+      "records": 28,
+      "universityRecords": 27,
+      "sourceChecked": 0
+    },
+    {
+      "code": "MM",
+      "name": "Myanmar",
+      "region": "Asia",
+      "records": 128,
+      "universityRecords": 120,
+      "sourceChecked": 0
+    },
+    {
+      "code": "NA",
+      "name": "Namibia",
+      "region": "Africa",
+      "records": 7,
+      "universityRecords": 6,
+      "sourceChecked": 0
+    },
+    {
+      "code": "NP",
+      "name": "Nepal",
+      "region": "Asia",
+      "records": 75,
+      "universityRecords": 45,
+      "sourceChecked": 0
+    },
+    {
+      "code": "NC",
+      "name": "New Caledonia",
+      "region": "Oceania",
+      "records": 3,
+      "universityRecords": 2,
+      "sourceChecked": 0
+    },
+    {
+      "code": "NZ",
+      "name": "New Zealand",
+      "region": "Oceania",
+      "records": 42,
+      "universityRecords": 31,
+      "sourceChecked": 0
+    },
+    {
+      "code": "NI",
+      "name": "Nicaragua",
+      "region": "Americas",
+      "records": 52,
+      "universityRecords": 51,
+      "sourceChecked": 0
+    },
+    {
+      "code": "NE",
+      "name": "Niger",
+      "region": "Africa",
+      "records": 10,
+      "universityRecords": 7,
+      "sourceChecked": 0
+    },
+    {
+      "code": "NG",
+      "name": "Nigeria",
+      "region": "Africa",
+      "records": 352,
+      "universityRecords": 334,
+      "sourceChecked": 0
+    },
+    {
+      "code": "NU",
+      "name": "Niue",
+      "region": "Oceania",
+      "records": 1,
+      "universityRecords": 1,
+      "sourceChecked": 0
+    },
+    {
+      "code": "KP",
+      "name": "North Korea",
+      "region": "Asia",
+      "records": 12,
+      "universityRecords": 11,
+      "sourceChecked": 0
+    },
+    {
+      "code": "MK",
+      "name": "North Macedonia",
+      "region": "Europe",
+      "records": 24,
+      "universityRecords": 19,
+      "sourceChecked": 0
+    },
+    {
+      "code": "MP",
+      "name": "Northern Mariana Islands",
+      "region": "Oceania",
+      "records": 3,
+      "universityRecords": 3,
+      "sourceChecked": 0
+    },
+    {
+      "code": "NO",
+      "name": "Norway",
+      "region": "Europe",
+      "records": 80,
+      "universityRecords": 49,
+      "sourceChecked": 0
+    },
+    {
+      "code": "OM",
+      "name": "Oman",
+      "region": "Asia",
+      "records": 38,
+      "universityRecords": 37,
+      "sourceChecked": 0
+    },
+    {
+      "code": "PK",
+      "name": "Pakistan",
+      "region": "Asia",
+      "records": 317,
+      "universityRecords": 285,
+      "sourceChecked": 0
+    },
+    {
+      "code": "PW",
+      "name": "Palau",
+      "region": "Oceania",
+      "records": 1,
+      "universityRecords": 1,
+      "sourceChecked": 0
+    },
+    {
+      "code": "PS",
+      "name": "Palestine",
+      "region": "Asia",
+      "records": 28,
+      "universityRecords": 28,
+      "sourceChecked": 0
+    },
+    {
+      "code": "PA",
+      "name": "Panama",
+      "region": "Americas",
+      "records": 37,
+      "universityRecords": 35,
+      "sourceChecked": 0
+    },
+    {
+      "code": "PG",
+      "name": "Papua New Guinea",
+      "region": "Oceania",
+      "records": 7,
+      "universityRecords": 7,
+      "sourceChecked": 0
+    },
+    {
+      "code": "PY",
+      "name": "Paraguay",
+      "region": "Americas",
+      "records": 41,
+      "universityRecords": 37,
+      "sourceChecked": 0
+    },
+    {
+      "code": "PE",
+      "name": "Peru",
+      "region": "Americas",
+      "records": 142,
+      "universityRecords": 127,
+      "sourceChecked": 0
+    },
+    {
+      "code": "PH",
+      "name": "Philippines",
+      "region": "Asia",
+      "records": 894,
+      "universityRecords": 705,
+      "sourceChecked": 0
+    },
+    {
+      "code": "PL",
+      "name": "Poland",
+      "region": "Europe",
+      "records": 416,
+      "universityRecords": 280,
+      "sourceChecked": 0
+    },
+    {
+      "code": "PT",
+      "name": "Portugal",
+      "region": "Europe",
+      "records": 433,
+      "universityRecords": 249,
+      "sourceChecked": 0
+    },
+    {
+      "code": "PR",
+      "name": "Puerto Rico",
+      "region": "Americas",
+      "records": 50,
+      "universityRecords": 47,
+      "sourceChecked": 0
+    },
+    {
+      "code": "QA",
+      "name": "Qatar",
+      "region": "Asia",
+      "records": 33,
+      "universityRecords": 18,
+      "sourceChecked": 0
+    },
+    {
+      "code": "RE",
+      "name": "Réunion",
+      "region": "Africa",
+      "records": 3,
+      "universityRecords": 1,
+      "sourceChecked": 0
+    },
+    {
+      "code": "RO",
+      "name": "Romania",
+      "region": "Europe",
+      "records": 137,
+      "universityRecords": 112,
+      "sourceChecked": 0
+    },
+    {
+      "code": "RU",
+      "name": "Russia",
+      "region": "Europe",
+      "records": 982,
+      "universityRecords": 626,
+      "sourceChecked": 0
+    },
+    {
+      "code": "RW",
+      "name": "Rwanda",
+      "region": "Africa",
+      "records": 30,
+      "universityRecords": 25,
+      "sourceChecked": 0
+    },
+    {
+      "code": "LC",
+      "name": "Saint Lucia",
+      "region": "Americas",
+      "records": 6,
+      "universityRecords": 6,
+      "sourceChecked": 0
+    },
+    {
+      "code": "WS",
+      "name": "Samoa",
+      "region": "Oceania",
+      "records": 3,
+      "universityRecords": 3,
+      "sourceChecked": 0
+    },
+    {
+      "code": "SM",
+      "name": "San Marino",
+      "region": "Europe",
+      "records": 2,
+      "universityRecords": 2,
+      "sourceChecked": 0
+    },
+    {
+      "code": "ST",
+      "name": "São Tomé and Príncipe",
+      "region": "Africa",
+      "records": 1,
+      "universityRecords": 1,
+      "sourceChecked": 0
+    },
+    {
+      "code": "SA",
+      "name": "Saudi Arabia",
+      "region": "Asia",
+      "records": 90,
+      "universityRecords": 86,
+      "sourceChecked": 0
+    },
+    {
+      "code": "SN",
+      "name": "Senegal",
+      "region": "Africa",
+      "records": 29,
+      "universityRecords": 18,
+      "sourceChecked": 0
+    },
+    {
+      "code": "RS",
+      "name": "Serbia",
+      "region": "Europe",
+      "records": 52,
+      "universityRecords": 28,
+      "sourceChecked": 0
+    },
+    {
+      "code": "SC",
+      "name": "Seychelles",
+      "region": "Africa",
+      "records": 2,
+      "universityRecords": 2,
+      "sourceChecked": 0
+    },
+    {
+      "code": "SL",
+      "name": "Sierra Leone",
+      "region": "Africa",
+      "records": 8,
+      "universityRecords": 8,
+      "sourceChecked": 0
+    },
+    {
+      "code": "SG",
+      "name": "Singapore",
+      "region": "Asia",
+      "records": 124,
+      "universityRecords": 54,
+      "sourceChecked": 0
+    },
+    {
+      "code": "SX",
+      "name": "Sint Maarten",
+      "region": "Americas",
+      "records": 2,
+      "universityRecords": 2,
+      "sourceChecked": 0
+    },
+    {
+      "code": "SK",
+      "name": "Slovakia",
+      "region": "Europe",
+      "records": 53,
+      "universityRecords": 36,
+      "sourceChecked": 0
+    },
+    {
+      "code": "SI",
+      "name": "Slovenia",
+      "region": "Europe",
+      "records": 67,
+      "universityRecords": 17,
+      "sourceChecked": 0
+    },
+    {
+      "code": "SB",
+      "name": "Solomon Islands",
+      "region": "Oceania",
+      "records": 2,
+      "universityRecords": 2,
+      "sourceChecked": 0
+    },
+    {
+      "code": "SO",
+      "name": "Somalia",
+      "region": "Africa",
+      "records": 53,
+      "universityRecords": 48,
+      "sourceChecked": 0
+    },
+    {
+      "code": "ZA",
+      "name": "South Africa",
+      "region": "Africa",
+      "records": 74,
+      "universityRecords": 44,
+      "sourceChecked": 0
+    },
+    {
+      "code": "KR",
+      "name": "South Korea",
+      "region": "Asia",
+      "records": 425,
+      "universityRecords": 393,
+      "sourceChecked": 0
+    },
+    {
+      "code": "SS",
+      "name": "South Sudan",
+      "region": "Africa",
+      "records": 11,
+      "universityRecords": 10,
+      "sourceChecked": 0
+    },
+    {
+      "code": "ES",
+      "name": "Spain",
+      "region": "Europe",
+      "records": 239,
+      "universityRecords": 170,
+      "sourceChecked": 0
+    },
+    {
+      "code": "LK",
+      "name": "Sri Lanka",
+      "region": "Asia",
+      "records": 46,
+      "universityRecords": 38,
+      "sourceChecked": 0
+    },
+    {
+      "code": "KN",
+      "name": "St Kitts and Nevis",
+      "region": "Americas",
+      "records": 7,
+      "universityRecords": 7,
+      "sourceChecked": 0
+    },
+    {
+      "code": "VC",
+      "name": "St Vincent and Grenadines",
+      "region": "Americas",
+      "records": 3,
+      "universityRecords": 2,
+      "sourceChecked": 0
+    },
+    {
+      "code": "SD",
+      "name": "Sudan",
+      "region": "Africa",
+      "records": 73,
+      "universityRecords": 68,
+      "sourceChecked": 0
+    },
+    {
+      "code": "SR",
+      "name": "Suriname",
+      "region": "Americas",
+      "records": 3,
+      "universityRecords": 3,
+      "sourceChecked": 0
+    },
+    {
+      "code": "SJ",
+      "name": "Svalbard and Jan Mayen",
+      "region": "Europe",
+      "records": 1,
+      "universityRecords": 1,
+      "sourceChecked": 0
+    },
+    {
+      "code": "SE",
+      "name": "Sweden",
+      "region": "Europe",
+      "records": 74,
+      "universityRecords": 59,
+      "sourceChecked": 0
+    },
+    {
+      "code": "CH",
+      "name": "Switzerland",
+      "region": "Europe",
+      "records": 209,
+      "universityRecords": 126,
+      "sourceChecked": 0
+    },
+    {
+      "code": "SY",
+      "name": "Syria",
+      "region": "Asia",
+      "records": 40,
+      "universityRecords": 36,
+      "sourceChecked": 0
+    },
+    {
+      "code": "TW",
+      "name": "Taiwan",
+      "region": "Asia",
+      "records": 178,
+      "universityRecords": 168,
+      "sourceChecked": 0
+    },
+    {
+      "code": "TJ",
+      "name": "Tajikistan",
+      "region": "Asia",
+      "records": 24,
+      "universityRecords": 20,
+      "sourceChecked": 0
+    },
+    {
+      "code": "TZ",
+      "name": "Tanzania",
+      "region": "Africa",
+      "records": 70,
+      "universityRecords": 51,
+      "sourceChecked": 0
+    },
+    {
+      "code": "TH",
+      "name": "Thailand",
+      "region": "Asia",
+      "records": 242,
+      "universityRecords": 216,
+      "sourceChecked": 0
+    },
+    {
+      "code": "GM",
+      "name": "The Gambia",
+      "region": "Africa",
+      "records": 7,
+      "universityRecords": 5,
+      "sourceChecked": 0
+    },
+    {
+      "code": "NL",
+      "name": "The Netherlands",
+      "region": "Europe",
+      "records": 148,
+      "universityRecords": 93,
+      "sourceChecked": 0
+    },
+    {
+      "code": "TL",
+      "name": "Timor-Leste",
+      "region": "Oceania",
+      "records": 12,
+      "universityRecords": 8,
+      "sourceChecked": 0
+    },
+    {
+      "code": "TG",
+      "name": "Togo",
+      "region": "Africa",
+      "records": 7,
+      "universityRecords": 4,
+      "sourceChecked": 0
+    },
+    {
+      "code": "TO",
+      "name": "Tonga",
+      "region": "Oceania",
+      "records": 1,
+      "universityRecords": 0,
+      "sourceChecked": 0
+    },
+    {
+      "code": "TT",
+      "name": "Trinidad and Tobago",
+      "region": "Americas",
+      "records": 6,
+      "universityRecords": 5,
+      "sourceChecked": 0
+    },
+    {
+      "code": "TN",
+      "name": "Tunisia",
+      "region": "Africa",
+      "records": 77,
+      "universityRecords": 38,
+      "sourceChecked": 0
+    },
+    {
+      "code": "TR",
+      "name": "Türkiye",
+      "region": "Asia",
+      "records": 250,
+      "universityRecords": 229,
+      "sourceChecked": 0
+    },
+    {
+      "code": "TM",
+      "name": "Turkmenistan",
+      "region": "Asia",
+      "records": 12,
+      "universityRecords": 8,
+      "sourceChecked": 0
+    },
+    {
+      "code": "TC",
+      "name": "Turks and Caicos Islands",
+      "region": "Americas",
+      "records": 1,
+      "universityRecords": 1,
+      "sourceChecked": 0
+    },
+    {
+      "code": "VI",
+      "name": "U.S. Virgin Islands",
+      "region": "Americas",
+      "records": 1,
+      "universityRecords": 1,
+      "sourceChecked": 0
+    },
+    {
+      "code": "UG",
+      "name": "Uganda",
+      "region": "Africa",
+      "records": 62,
+      "universityRecords": 55,
+      "sourceChecked": 0
+    },
+    {
+      "code": "UA",
+      "name": "Ukraine",
+      "region": "Europe",
+      "records": 345,
+      "universityRecords": 250,
+      "sourceChecked": 0
+    },
+    {
+      "code": "AE",
+      "name": "United Arab Emirates",
+      "region": "Asia",
+      "records": 77,
+      "universityRecords": 64,
+      "sourceChecked": 0
+    },
+    {
+      "code": "GB",
+      "name": "United Kingdom",
+      "region": "Europe",
+      "records": 653,
+      "universityRecords": 512,
+      "sourceChecked": 1
+    },
+    {
+      "code": "US",
+      "name": "United States",
+      "region": "Americas",
+      "records": 4765,
+      "universityRecords": 3669,
+      "sourceChecked": 0
+    },
+    {
+      "code": "UY",
+      "name": "Uruguay",
+      "region": "Americas",
+      "records": 20,
+      "universityRecords": 15,
+      "sourceChecked": 0
+    },
+    {
+      "code": "UZ",
+      "name": "Uzbekistan",
+      "region": "Asia",
+      "records": 140,
+      "universityRecords": 100,
+      "sourceChecked": 0
+    },
+    {
+      "code": "VU",
+      "name": "Vanuatu",
+      "region": "Oceania",
+      "records": 1,
+      "universityRecords": 1,
+      "sourceChecked": 0
+    },
+    {
+      "code": "VE",
+      "name": "Venezuela",
+      "region": "Americas",
+      "records": 61,
+      "universityRecords": 55,
+      "sourceChecked": 0
+    },
+    {
+      "code": "VN",
+      "name": "Vietnam",
+      "region": "Asia",
+      "records": 276,
+      "universityRecords": 232,
+      "sourceChecked": 0
+    },
+    {
+      "code": "EH",
+      "name": "Western Sahara",
+      "region": "Africa",
+      "records": 1,
+      "universityRecords": 1,
+      "sourceChecked": 0
+    },
+    {
+      "code": "YE",
+      "name": "Yemen",
+      "region": "Asia",
+      "records": 61,
+      "universityRecords": 59,
+      "sourceChecked": 0
+    },
+    {
+      "code": "ZM",
+      "name": "Zambia",
+      "region": "Africa",
+      "records": 31,
+      "universityRecords": 28,
+      "sourceChecked": 0
+    },
+    {
+      "code": "ZW",
+      "name": "Zimbabwe",
+      "region": "Africa",
+      "records": 27,
+      "universityRecords": 25,
+      "sourceChecked": 0
+    }
+  ],
+  "gaps": [
+    "This is not a complete world register. It contains 32,748 directory records from the sources listed below; other universities and education organisations are certainly missing.",
+    "Source-checked programme, fee, deadline, scholarship and recognition facts exist for 2 of 25,290 university-scope records (under 0.1%). The rest are discovery records only.",
+    "Directory inclusion is not university status, accreditation or degree-granting authority. 7,458 education records are kept in the broader “education” scope because they are neither in the Hipo university directory nor named like a university.",
+    "“University scope” combines the community Hipo university directory with a multilingual name heuristic for ROR records. It can include organisations that are not universities and can miss universities with unusual names.",
+    "Hipo is a community-maintained directory, not an official register. It may contain non-university institutions and may be out of date. Its entries are labelled as community directory listings.",
+    "No currency conversion is applied in this release. Fees are shown in their original currency and cannot be compared across currencies without a dated exchange-rate source.",
+    "Recognition and accreditation are shown only where an official university or authority page was read. Absence of a recognition entry is not evidence that an institution is unaccredited (1 record currently have one or more entries).",
+    "Cities are missing for 2,574 records. No city is inferred from a domain, a postal address or another institution.",
+    "8,734 distinct city strings are recorded; these are source spellings, not a normalised world city list.",
+    "Programme catalogues are selective samples of official pages. A missing programme is not a finding that it is not offered, and a listed programme does not guarantee admission.",
+    "Former names are included only when a source names them. Local-script and alternate names come from the directory sources and are not complete.",
+    "Deadline dates can change and are shown with the source's own wording and the date the page was read. UniScope does not monitor pages continuously.",
+    "The subject classification is UniScope’s own grouping, not a national, accreditation or publisher taxonomy; 2 of the taxonomy’s subject areas currently have at least one programme fact.",
+    "No ranking is produced. Publisher rankings are not mixed, and no overall quality, personal-fit or admission-chance score is calculated."
+  ],
+  "updateHistory": [
+    {
+      "at": "2026-10-17T05:49:02.159Z",
+      "sources": [
+        {
+          "id": "ror",
+          "release": "v2.14 (2026-10-06)",
+          "retrievedAt": "2026-10-17"
+        },
+        {
+          "id": "hipo",
+          "release": "sha256:4c8b526235db",
+          "retrievedAt": "2026-10-17"
+        }
+      ],
+      "totals": {
+        "records": 32748,
+        "universityScope": 25290,
+        "sourceChecked": 2,
+        "programs": 3,
+        "feeFacts": 5
+      },
+      "note": "Directory sources: ROR v2.14-2026-10-06; Hipo sha256:4c8b526235db. 32,748 records, 25,290 university-scope, 2 source-checked profiles."
+    }
+  ]
+}

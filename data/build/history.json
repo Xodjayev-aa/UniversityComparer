@@ -1,0 +1,25 @@
+[
+  {
+    "at": "2026-10-17T05:49:02.159Z",
+    "sources": [
+      {
+        "id": "ror",
+        "release": "v2.14 (2026-10-06)",
+        "retrievedAt": "2026-10-17"
+      },
+      {
+        "id": "hipo",
+        "release": "sha256:4c8b526235db",
+        "retrievedAt": "2026-10-17"
+      }
+    ],
+    "totals": {
+      "records": 32748,
+      "universityScope": 25290,
+      "sourceChecked": 2,
+      "programs": 3,
+      "feeFacts": 5
+    },
+    "note": "Directory sources: ROR v2.14-2026-10-06; Hipo sha256:4c8b526235db. 32,748 records, 25,290 university-scope, 2 source-checked profiles."
+  }
+]

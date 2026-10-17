@@ -1,0 +1,50 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install dependencies
+        run: npm ci --legacy-peer-deps
+      - name: Type-check
+        run: npm run typecheck
+      - name: Validate the committed dataset
+        run: npm run validate:data
+      - name: Run mocked tests
+        run: npm test
+      - name: Build the client
+        run: npm run build
+      - name: Check the production server starts with the dataset
+        run: |
+          PORT=3123 npm start &
+          server_pid=$!
+          trap 'kill $server_pid 2>/dev/null || true' EXIT
+          for attempt in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:3123/api/health > /tmp/health.json; then break; fi
+            sleep 1
+          done
+          cat /tmp/health.json
+          grep -q '"ok":true' /tmp/health.json
+          curl -fsS 'http://127.0.0.1:3123/api/search?q=oxford&pageSize=1' > /tmp/search.json
+          grep -q '"items"' /tmp/search.json
+          curl -fsS http://127.0.0.1:3123/ > /tmp/index.html
+          grep -q 'UniScope' /tmp/index.html

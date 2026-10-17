@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="UniScope app icon">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#123a38"/>
+      <stop offset="0.55" stop-color="#0e2a2a"/>
+      <stop offset="1" stop-color="#081d1e"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)"/>
+  <circle cx="256" cy="256" r="132" fill="none" stroke="#f3ead8" stroke-width="8"/>
+  <g stroke="#f3ead8" stroke-width="8" stroke-linecap="round">
+    <path d="M256 106v20"/>
+    <path d="M256 386v20"/>
+    <path d="M106 256h20"/>
+    <path d="M386 256h20"/>
+  </g>
+  <path d="M256 184l72 45H184z" fill="#e8a33d"/>
+  <rect x="184" y="240" width="144" height="10" rx="3" fill="#f3ead8"/>
+  <g fill="#f3ead8">
+    <rect x="200" y="261" width="16" height="76" rx="3"/>
+    <rect x="248" y="261" width="16" height="76" rx="3"/>
+    <rect x="296" y="261" width="16" height="76" rx="3"/>
+    <rect x="190" y="347" width="132" height="12" rx="3"/>
+  </g>
+  <circle cx="364" cy="190" r="12" fill="#e8a33d"/>
+</svg>
