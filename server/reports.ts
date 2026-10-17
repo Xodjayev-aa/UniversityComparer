@@ -24,10 +24,23 @@ export type NewReport = Pick<
 >;
 
 /**
+ * The small surface the API needs from a review queue. The local server uses a
+ * JSONL file; serverless deployments use Supabase so reports survive cold
+ * starts and are shared by every function instance.
+ */
+export interface ReportRepository {
+  readonly kind: string;
+  append(input: NewReport): Promise<CorrectionReport>;
+  list(): Promise<CorrectionReport[]>;
+  update(id: string, patch: { status?: ReportStatus; note?: string }): Promise<CorrectionReport | null>;
+}
+
+/**
  * A deliberately small JSONL queue. It is not durable on ephemeral hosts;
  * deploy with a persistent volume or export the queue before scaling.
  */
-export class ReportStore {
+export class ReportStore implements ReportRepository {
+  readonly kind = 'file';
   private readonly filePath: string;
   private writeQueue: Promise<unknown> = Promise.resolve();
 

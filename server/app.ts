@@ -6,7 +6,7 @@ import helmet from 'helmet';
 import { z } from 'zod';
 import { summarize, type DataStore } from './data';
 import { buildFacets, parseSearchParams, searchStore } from './search';
-import { ReportStore, type CorrectionReport } from './reports';
+import { ReportStore, type CorrectionReport, type ReportRepository } from './reports';
 import {
   adminIsConfigured,
   clearSessionCookie,
@@ -20,6 +20,8 @@ import {
 export interface CreateAppOptions {
   store?: DataStore | null;
   dataError?: Error | null;
+  /** Override the review queue (serverless deployments pass Supabase). */
+  reportStore?: ReportRepository;
   reportStoreDir?: string;
   adminToken?: string | null;
   distDir?: string;
@@ -106,6 +108,16 @@ function apiError(res: Response, status: number, error: string, detail?: string)
   res.status(status).json(detail ? { error, detail } : { error });
 }
 
+function reportStorageError(res: Response, error: unknown, fallback: string): void {
+  const message = error instanceof Error ? error.message : String(error);
+  console.error('[reports]', message);
+  if (message.startsWith('Supabase is not configured')) {
+    apiError(res, 503, 'Report storage is not configured on this deployment.', message);
+    return;
+  }
+  apiError(res, 500, fallback);
+}
+
 function cleanText(value: string): string {
   return value.replace(/[\u0000-\u0008\u000b\u000c\u000e-\u001f\u007f]/g, '').trim();
 }
@@ -125,9 +137,11 @@ export function createApp(options: CreateAppOptions = {}) {
   const dataError = options.dataError ?? null;
   const version = options.version ?? '0.1.0';
   const adminToken = options.adminToken ?? process.env.ADMIN_TOKEN ?? null;
-  const reportStore = new ReportStore(
-    options.reportStoreDir ?? process.env.REPORT_STORE_DIR ?? path.resolve(process.cwd(), 'data', 'runtime'),
-  );
+  const reportStore =
+    options.reportStore ??
+    new ReportStore(
+      options.reportStoreDir ?? process.env.REPORT_STORE_DIR ?? path.resolve(process.cwd(), 'data', 'runtime'),
+    );
   const distDir = path.resolve(options.distDir ?? path.join(process.cwd(), 'dist'));
   const isProduction = process.env.NODE_ENV === 'production';
 
@@ -161,7 +175,17 @@ export function createApp(options: CreateAppOptions = {}) {
     }),
   );
   app.use(compression());
-  app.use(express.json({ limit: '32kb', strict: true }));
+  // Vercel's Node runtime parses JSON bodies before invoking the function and
+  // marks the stream as consumed. Skip Express's parser in that case so report
+  // and admin submissions are not rejected as an empty body.
+  const jsonParser = express.json({ limit: '32kb', strict: true });
+  app.use((req, res, next) => {
+    if (req.body !== undefined) {
+      next();
+      return;
+    }
+    jsonParser(req, res, next);
+  });
 
   app.use((req, res, next) => {
     res.setHeader('X-Content-Type-Options', 'nosniff');
@@ -191,6 +215,8 @@ export function createApp(options: CreateAppOptions = {}) {
       generatedAt: store?.dataset.generatedAt ?? null,
       records: store?.dataset.institutions.length ?? 0,
       dataDir: store?.dataDir ?? '',
+      reportStorage: reportStore.kind,
+      ...(store ? {} : { detail: dataError?.message ?? 'The dataset could not be loaded.' }),
     });
   });
 
@@ -325,8 +351,8 @@ export function createApp(options: CreateAppOptions = {}) {
         email: input.email?.trim() || null,
       });
       res.status(201).json({ ok: true, reference: report.id.slice(0, 8).toUpperCase() });
-    } catch {
-      apiError(res, 500, 'The report could not be stored. Please try again later.');
+    } catch (error) {
+      reportStorageError(res, error, 'The report could not be stored. Please try again later.');
     }
   });
 
@@ -395,8 +421,8 @@ export function createApp(options: CreateAppOptions = {}) {
       const reports = await reportStore.list();
       res.setHeader('Cache-Control', 'no-store');
       res.json({ reports });
-    } catch {
-      apiError(res, 500, 'The review queue could not be read.');
+    } catch (error) {
+      reportStorageError(res, error, 'The review queue could not be read.');
     }
   });
 
@@ -421,8 +447,8 @@ export function createApp(options: CreateAppOptions = {}) {
       }
       res.setHeader('Cache-Control', 'no-store');
       res.json({ report: updated });
-    } catch {
-      apiError(res, 500, 'The report could not be updated.');
+    } catch (error) {
+      reportStorageError(res, error, 'The report could not be updated.');
     }
   });
 

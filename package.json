@@ -2,7 +2,7 @@
   "name": "uniscope",
   "version": "0.1.0",
   "private": true,
-  "description": "UniScope \u2014 honest university discovery and comparison, with per-fact sources and an installable PWA.",
+  "description": "UniScope — honest university discovery and comparison, with per-fact sources and an installable PWA.",
   "license": "MIT",
   "type": "module",
   "engines": {
@@ -44,6 +44,7 @@
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@types/supertest": "^7.2.1",
+    "@vercel/node": "^24.0.3",
     "@vitejs/plugin-react": "^5.2.0",
     "concurrently": "^10.0.6",
     "cross-env": "^10.1.0",
