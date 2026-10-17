@@ -8,10 +8,10 @@ import type {
   InstitutionSummary,
   InstitutionVerification,
   SourceInfo,
-} from '../shared/types';
-import { foldText, compactText } from '../shared/text';
-import { buildCoverage } from '../scripts/lib/coverage';
-import { institutionDatasetSchema } from '../shared/schema';
+} from '../shared/types.js';
+import { foldText, compactText } from '../shared/text.js';
+import { buildCoverage } from '../scripts/lib/coverage.js';
+import { institutionDatasetSchema } from '../shared/schema.js';
 
 export class DataUnavailableError extends Error {
   constructor(message: string) {

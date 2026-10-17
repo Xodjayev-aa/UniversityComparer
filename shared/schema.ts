@@ -1,6 +1,6 @@
 import { z } from 'zod';
-import { SUBJECT_IDS } from './taxonomy';
-import type { Institution } from './types';
+import { SUBJECT_IDS } from './taxonomy.js';
+import type { Institution } from './types.js';
 
 const isoDate = z
   .string()

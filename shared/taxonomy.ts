@@ -6,7 +6,7 @@ import type {
   ListingScope,
   StudyMode,
   VerificationStatus,
-} from './types';
+} from './types.js';
 
 export const DEGREE_LEVELS: Array<{ id: DegreeLevel; label: string; short: string }> = [
   { id: 'bachelor', label: "Bachelor's", short: 'Bachelor' },

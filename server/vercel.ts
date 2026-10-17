@@ -1,8 +1,8 @@
 import path from 'node:path';
-import { createApp } from './app';
-import { loadData, type DataStore } from './data';
-import { ReportStore, type ReportRepository } from './reports';
-import { SupabaseReportStore, supabaseReportsConfigured } from './supabase-reports';
+import { createApp } from './app.js';
+import { loadData, type DataStore } from './data.js';
+import { ReportStore, type ReportRepository } from './reports.js';
+import { SupabaseReportStore, supabaseReportsConfigured } from './supabase-reports.js';
 
 /**
  * Rebuild the request URL that Express should route when Vercel applies the

@@ -1,5 +1,5 @@
-import type { CoverageStats, Institution, SourceInfo } from '../../shared/types';
-import { subjectLabel } from '../../shared/taxonomy';
+import type { CoverageStats, Institution, SourceInfo } from '../../shared/types.js';
+import { subjectLabel } from '../../shared/taxonomy.js';
 
 export interface HistoryEntry {
   at: string;
