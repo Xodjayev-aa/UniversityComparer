@@ -1,5 +1,5 @@
 import { randomUUID } from 'node:crypto';
-import type { CorrectionReport, NewReport, ReportRepository, ReportStatus } from './reports';
+import type { CorrectionReport, NewReport, ReportRepository, ReportStatus } from './reports.js';
 
 /**
  * PostgREST row shape for the `reports` table created by

@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { getServerApp, originalUrlFromRewrite } from '../server/vercel';
+import { getServerApp, originalUrlFromRewrite } from '../server/vercel.js';
 
 /**
  * Vercel serverless entry point. `vercel.json` rewrites every /api/* request

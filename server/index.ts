@@ -1,5 +1,5 @@
-import { createApp } from './app';
-import { loadData, type DataStore } from './data';
+import { createApp } from './app.js';
+import { loadData, type DataStore } from './data.js';
 
 const PORT = Number(process.env.PORT ?? (process.env.NODE_ENV === 'production' ? 3000 : 8787));
 const HOST = process.env.HOST ?? '0.0.0.0';

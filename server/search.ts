@@ -5,10 +5,10 @@ import type {
   Region,
   SearchResponse,
   SearchWithheld,
-} from '../shared/types';
-import { DEGREE_LEVELS, SUBJECTS, languageLabel } from '../shared/taxonomy';
-import { compactText, foldText } from '../shared/text';
-import { summarize, type DataStore, type SearchEntry } from './data';
+} from '../shared/types.js';
+import { DEGREE_LEVELS, SUBJECTS, languageLabel } from '../shared/taxonomy.js';
+import { compactText, foldText } from '../shared/text.js';
+import { summarize, type DataStore, type SearchEntry } from './data.js';
 
 export type SearchScope = 'university' | 'education' | 'all';
 

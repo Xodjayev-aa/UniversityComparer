@@ -4,9 +4,9 @@ import compression from 'compression';
 import express, { type NextFunction, type Request, type Response } from 'express';
 import helmet from 'helmet';
 import { z } from 'zod';
-import { summarize, type DataStore } from './data';
-import { buildFacets, parseSearchParams, searchStore } from './search';
-import { ReportStore, type CorrectionReport, type ReportRepository } from './reports';
+import { summarize, type DataStore } from './data.js';
+import { buildFacets, parseSearchParams, searchStore } from './search.js';
+import { ReportStore, type CorrectionReport, type ReportRepository } from './reports.js';
 import {
   adminIsConfigured,
   clearSessionCookie,
@@ -15,7 +15,7 @@ import {
   sameOrigin,
   secureEquals,
   sessionCookieAttributes,
-} from './admin';
+} from './admin.js';
 
 export interface CreateAppOptions {
   store?: DataStore | null;
@@ -513,6 +513,6 @@ export function createApp(options: CreateAppOptions = {}) {
   return app;
 }
 
-function summarizeRecord(_store: DataStore, record: import('../shared/types').Institution) {
+function summarizeRecord(_store: DataStore, record: import('../shared/types.js').Institution) {
   return summarize(record);
 }
